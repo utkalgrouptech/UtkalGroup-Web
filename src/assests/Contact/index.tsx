@@ -1,0 +1,1 @@
+export { default as contact1} from "./360_F_481316696_cPzBNRfqMpbq2cx2soWytWAjhzZYByS4.jpg"

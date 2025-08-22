@@ -1,0 +1,11 @@
+export { default as team1} from "./CMD.ae96e4de.jpeg"
+export { default as team2} from "./Madam.jpeg"
+export { default as team3} from "./Narayan.jpeg"
+export { default as team4} from "./Niranjan.jpeg"
+export { default as team5} from "./Srikant.jpeg"
+export { default as team6} from "./e0445788-62ba-433f-91a0-4ebe95b70691.jpg"
+export { default as team7} from "./Mohapatra.jpeg"
+export { default as team8} from "./e990e45f-ce78-4518-84aa-41628b9073ee.jpg"
+export { default as team9} from "./malaya.jpeg"
+
+export { default as photo} from "./business-concept-with-team-close-up_23-2149151159.jpg"
