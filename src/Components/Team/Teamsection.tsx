@@ -47,21 +47,12 @@ const TeamSection = () => {
       departments: ['Operations', 'Compliance']
     },
     {
-      name: 'Shriknt Pati',
-      role: 'VP',
-      image: team5,
-      linkedIn: '#',
-      icon: <ManageAccountsIcon className="text-amber-600" />,
-      bio: 'Shriknt Pati oversees operations as VP.',
-      departments: ['Management', 'Human Resources']
-    },
-    {
-      name: 'Nilanchal Ku Singh',
-      role: 'Enterprise Director',
+      name: 'Priyabrata Mishra',
+      role: 'Branch Head',
       image: team6,
       linkedIn: '#',
       icon: <EngineeringIcon className="text-amber-600" />,
-      bio: 'Nilanchal Ku Singh drives enterprise initiatives.',
+      bio: 'Priyabrata Mishra drives enterprise initiatives.',
       departments: ['Enterprise Solutions', 'Engineering']
     },
     {
@@ -72,15 +63,6 @@ const TeamSection = () => {
       icon: <EngineeringIcon className="text-amber-600" />,
       bio: 'B N Mohapatra is a key leader in enterprise direction.',
       departments: ['Enterprise Solutions', 'Project Management']
-    },
-    {
-      name: 'Himanshu Mohapatra',
-      role: 'Branch Head',
-      image: team8,
-      linkedIn: '#',
-      icon: <BusinessIcon className="text-amber-600" />,
-      bio: 'Himanshu Mohapatra manages our branch operations.',
-      departments: ['Branch Operations', 'Customer Relations']
     },
     {
       name: 'Malaya Kumar Rath',
