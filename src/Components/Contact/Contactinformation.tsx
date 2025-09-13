@@ -90,8 +90,10 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+91 9776666555</p>
-                    <p className="text-gray-600">+91 674 123 4567</p>
+                    <p className="text-gray-600">+91 9853030003</p>
+                    <p className="text-gray-600">+91 9668848999</p>
+                    <p className="text-gray-600">+91 9692200370</p>
+                    <p className="text-gray-600">+91 9853034446</p>
                   </div>
                 </div>
 
@@ -156,17 +158,17 @@ const ContactPage = () => {
               {
                 city: "New Delhi",
                 address: "Corporate Office: 214, Second Floor, Sector A, Pocket C, Vasant Kunj, New Delhi 110070",
-                phone: "+91 9776666555"
+                phone: "+91 9668848999"
               },
               {
                 city: "Bhubaneswar",
                 address: "Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
-                phone: "+91 674 123 4567"
+                phone: "+91 9853030003"
               },
               {
                 city: "Bangalore",
                 address: "789 Tech Plaza, Whitefield, Bangalore - 560066",
-                phone: "+91 9776666555"
+                phone: "+91 9692200370"
               }
             ].map((branch, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
