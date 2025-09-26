@@ -10,13 +10,13 @@ export default function WorkProcess() {
       features: ["24/7 Maintenance", "Energy Management", "Space Optimization"],
       icon: "🏢"
     },
-    {
-      id: 2,
-      title: "Security Services",
-      description: "Z Plus Security services providing specialized protection for VIPs, VVIPs, and corporate organizations.",
-      features: ["VIP Protection", "Corporate Security", "24/7 Monitoring"],
-      icon: "🛡️"
-    },
+    // {
+    //   id: 2,
+    //   title: "Security Services",
+    //   description: "Z Plus Security services providing specialized protection for VIPs, VVIPs, and corporate organizations.",
+    //   features: ["VIP Protection", "Corporate Security", "24/7 Monitoring"],
+    //   icon: "🛡️"
+    // },
     {
       id: 3,
       title: "Payroll Management",
