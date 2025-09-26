@@ -24,7 +24,7 @@ export const navArr = [
       { id: "s3", title: "Topfront", path: "/services/topfront",img: topfront },
       { id: "s4", title: "Utkal foundation", path: "/services/utkal-foundation",img: found },
       { id: "s5", title: "Utkal smart", path: "/services/utkal-smart",img: smart },
-      { id: "s6", title: "Zplus security", path: "/services/zplus-security",img: zplus },
+      // { id: "s6", title: "Zplus security", path: "/services/zplus-security",img: zplus },
       { id: "s7", title: "Utkal international", path: "/services/utkal-international",img: international },
       { id: "s8", title: "Indoplus", path: "/services/indoplus",img: indo1 },
       { id: "s9", title: "Ayushman Foundation", path: "/services/ayushman-foundation",img: ayus1 },
@@ -215,13 +215,13 @@ export const navArr = [
               
             },
 
-            {
-              id: 11,
-              title: "Z+ SECURITY",
-              image: zplus,
-              logo:utkalz,
-              content:"Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
-            },
+            // {
+            //   id: 11,
+            //   title: "Z+ SECURITY",
+            //   image: zplus,
+            //   logo:utkalz,
+            //   content:"Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
+            // },
             {
               id: 12,
               title:"INDOPLUS",
@@ -523,12 +523,12 @@ export const navArr = [
               img:mr1,
               description: "MR Corporate is a top-notch Pan India provider of facilities management solutions delivering quality services to a diverse clientele ranging from local businesses to multinational corporations and offer tailored comprehensive solutions covering cleaning, security, maintenance, and more ensuring a clean, safe, and productive work environment.",
             },
-            {
-              id: 14,
-              title: "ZPLUS SECURITY",
-              img:home13,
-              description: "Z Plus Security management is a premier security services company which provides specialized security services for VIPs and VVIPs in government and private organizations. We provide tailor-made security solutions based on the needs of individuals and assessing their threat perceptions.",
-            },
+            // {
+            //   id: 14,
+            //   title: "ZPLUS SECURITY",
+            //   img:home13,
+            //   description: "Z Plus Security management is a premier security services company which provides specialized security services for VIPs and VVIPs in government and private organizations. We provide tailor-made security solutions based on the needs of individuals and assessing their threat perceptions.",
+            // },
             {
               id:15,
               title: "INDOPLUS",
@@ -571,13 +571,13 @@ export const sliderArr = [
     logo: home15,
     paragraph: "Utkal Facility Services specializes in Manpower management, Event Management focusing on planning, budgeting and resource allocation for various types of properties such as malls, commercial complexes, hospitals, offices and more.",
   },
-  {
-    id: 2,
-    img: slider2,
-    title: "ZPLUS SECURITY",
-    logo: utkalz,
-    paragraph: "Z Plus Security management is a premier security services company which provides specialized security services for VIPs and VVIPs in government and private organizations. We provide tailor-made security solutions based on the needs of individuals and assessing their threat perceptions.",
-  },
+  // {
+  //   id: 2,
+  //   img: slider2,
+  //   title: "ZPLUS SECURITY",
+  //   logo: utkalz,
+  //   paragraph: "Z Plus Security management is a premier security services company which provides specialized security services for VIPs and VVIPs in government and private organizations. We provide tailor-made security solutions based on the needs of individuals and assessing their threat perceptions.",
+  // },
   {
     id: 3,
     img: slider12,
