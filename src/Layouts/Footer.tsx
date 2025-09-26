@@ -50,7 +50,7 @@ export default function Footer() {
             {[
               'Utkal facility', 'Utkal smart', 'Indoplus', 'Utkal global', 'MR corporate', 'Maxim', 
               'Odo management', 'Homedeal', 'Topfront', 'Utkal foundation', 'Utkal homes', 
-              'Utkal corporation', 'Utkal bottling', 'Utkal education', 'Zplus security', 
+              'Utkal corporation', 'Utkal bottling', 'Utkal education', 
               'Utkal international', 'Utkal power', 'My job'
             ].map((service, index) => (
               <li key={index}>
