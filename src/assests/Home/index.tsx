@@ -51,7 +51,7 @@ export { default as homedeal} from "./Leverage-effective-real-estate-marketing-m
 export { default as corporation1} from "./utkalcorporation.jpg"
 export { default as power1} from "./utkal power.png"
 export { default as house} from "./utkal home.png"
-export { default as logo1} from "./Utkal Logo White.png"
+export { default as logo1} from "./WhatsApp Image 2025-10-06 at 10.29.32_4fd6e332.jpg"
 
 export { default as client6} from "./2.3d2ae6b8.png"
 export { default as client7} from "./17.2ae774f4.png"
