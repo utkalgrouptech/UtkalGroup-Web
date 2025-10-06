@@ -1,6 +1,5 @@
 
 import BlogPage from "@/Components/Blog/blog";
-import Commonbreadcrumb from "@/Components/Commoncomponent/Commonbreadcrumb";
 
 import MainLayouts from "@/Layouts/MainLayouts";
 import React from "react";
@@ -11,7 +10,7 @@ const data = {
 export default function aboutus() {
   return (
     <MainLayouts>
-      <Commonbreadcrumb data={data} />
+      {/* <Commonbreadcrumb data={data} /> */}
       <BlogPage />
     </MainLayouts>
   );

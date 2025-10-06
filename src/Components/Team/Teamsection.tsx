@@ -28,15 +28,15 @@ const TeamSection = () => {
       bio: 'Swayanshree Mishra brings expertise and dedication as Director.',
       departments: ['Business Development', 'Operations']
     },
-    {
-      name: 'LTP Narayan',
-      role: 'Director',
-      image: team3,
-      linkedIn: '#',
-      icon: <BusinessIcon className="text-amber-600" />,
-      bio: 'LTP Narayan is a driving force in our leadership team.',
-      departments: ['Finance', 'Strategy']
-    },
+    // {
+    //   name: 'LTP Narayan',
+    //   role: 'Director',
+    //   image: team3,
+    //   linkedIn: '#',
+    //   icon: <BusinessIcon className="text-amber-600" />,
+    //   bio: 'LTP Narayan is a driving force in our leadership team.',
+    //   departments: ['Finance', 'Strategy']
+    // },
     {
       name: 'Niranjan Mishra',
       role: 'Director',
@@ -55,24 +55,24 @@ const TeamSection = () => {
       bio: 'Priyabrata Mishra drives enterprise initiatives.',
       departments: ['Enterprise Solutions', 'Engineering']
     },
-    {
-      name: 'B N Mohapatra',
-      role: 'Enterprise Director',
-      image: team7,
-      linkedIn: '#',
-      icon: <EngineeringIcon className="text-amber-600" />,
-      bio: 'B N Mohapatra is a key leader in enterprise direction.',
-      departments: ['Enterprise Solutions', 'Project Management']
-    },
-    {
-      name: 'Malaya Kumar Rath',
-      role: 'CTO',
-      image: team9,
-      linkedIn: '#',
-      icon: <EngineeringIcon className="text-amber-600" />,
-      bio: 'Malaya Kumar Rath leads technology as CTO.',
-      departments: ['Technology', 'Innovation']
-    },
+    // {
+    //   name: 'B N Mohapatra',
+    //   role: 'Enterprise Director',
+    //   image: team7,
+    //   linkedIn: '#',
+    //   icon: <EngineeringIcon className="text-amber-600" />,
+    //   bio: 'B N Mohapatra is a key leader in enterprise direction.',
+    //   departments: ['Enterprise Solutions', 'Project Management']
+    // },
+    // {
+    //   name: 'Malaya Kumar Rath',
+    //   role: 'CTO',
+    //   image: team9,
+    //   linkedIn: '#',
+    //   icon: <EngineeringIcon className="text-amber-600" />,
+    //   bio: 'Malaya Kumar Rath leads technology as CTO.',
+    //   departments: ['Technology', 'Innovation']
+    // },
   ];
 
   return (

@@ -11,7 +11,7 @@ const data = {
 export default function aboutus() {
   return (
     <MainLayouts>
-      <Commonbreadcrumb data={data} />
+      {/* <Commonbreadcrumb data={data} /> */}
       <Cards />
     </MainLayouts>
   );

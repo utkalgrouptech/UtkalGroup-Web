@@ -11,7 +11,7 @@ const data={
 export default function service() {
   return (
     <MainLayouts>
-      <Commonbreadcrumb data={data}/>
+      {/* <Commonbreadcrumb data={data}/> */}
         <ServiceDetails/>
       
       
