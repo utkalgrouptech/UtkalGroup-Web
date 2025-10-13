@@ -92,4 +92,5 @@ export { default as top1} from "./Engineering.a027aac3.jpg"
 export { default as max} from "./1622887648434.jpg"
 export { default as bott} from "./bottling.png.jpg"
 export { default as MainLogo} from "./Artboard 4-100.jpg"
+export { default as Homedealogo} from "./Home deal typography Color@3x.png"
 

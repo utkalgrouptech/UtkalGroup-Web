@@ -1,5 +1,5 @@
 
-import {  ayus1, ayush1, ayushman, bott, bottle, bottling, client1, client10, client11, client12, client13, client2, client3, client4, client5, client6, client7, client8, client9, corporation, corporation1,  education, education1, facility, found, foundation, global, global1, home13, home14, home15, homedeal, homes, house, indo1, international, job1, joblogo, link, max, maxim, maxim1, mr, mr1, myjob, national, odo, odo1,  power, power1, slider1, slider10, slider11, slider12, slider13, slider14, slider15, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider9, smart, smartlink, study, top, top1, topfront, utkal1, utkalz, zplus } from "@/assests/Home";
+import {  ayus1, ayush1, ayushman, bott, bottle, bottling, client1, client10, client11, client12, client13, client2, client3, client4, client5, client6, client7, client8, client9, corporation, corporation1,  education, education1, facility, found, foundation, global, global1, home13, home14, home15, homedeal, Homedealogo, homes, house, indo1, international, job1, joblogo, link, max, maxim, maxim1, mr, mr1, myjob, national, odo, odo1,  power, power1, slider1, slider10, slider11, slider12, slider13, slider14, slider15, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider9, smart, smartlink, study, top, top1, topfront, utkal1, utkalz, zplus } from "@/assests/Home";
 
 
 
@@ -32,10 +32,11 @@ subMenu: [
   { id: "s11", title: "Topfront", path: "/services/topfront", img: topfront },
   { id: "s12", title: "MR corporate", path: "/services/mr-corporate", img: mr1 },
   { id: "s13", title: "Odo management", path: "/services/odo-management", img: odo },
-  { id: "s14", title: "My job", path: "/services/my-job", img: joblogo },
-  { id: "s15", title: "Ayushman foundation", path: "/services/ayushman-foundation", img: ayushman },
-  { id: "s16", title: "Maxim", path: "/services/maxim", img: maxim },
-  { id: "s17", title: "Indoplus", path: "/services/indoplus", img: indo1 },
+  { id: "s14", title: "Home Deal", path: "/services/homedeal", img: Homedealogo },
+  { id: "s15", title: "My job", path: "/services/my-job", img: joblogo },
+  { id: "s16", title: "Ayushman foundation", path: "/services/ayushman-foundation", img: ayushman },
+  { id: "s17", title: "Maxim", path: "/services/maxim", img: maxim },
+  { id: "s18", title: "Indoplus", path: "/services/indoplus", img: indo1 },
   // { id: "s18", title: "Zplus security", path: "/services/zplus-security", img: zplus },
 ],
 
