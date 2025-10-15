@@ -45,7 +45,7 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                      From the <span className="text-amber-600">Director's Desk</span>
+                      From the <span className="text-amber-600">Director&apos;s Desk</span>
                     </h3>
                     <div className="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
                   </div>
@@ -53,7 +53,7 @@ export default function AboutSection() {
                 
                 <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
                   <p className="relative pl-6 border-l-2 border-amber-200">
-                    <span className="absolute left-0 top-0 text-amber-500 text-2xl">"</span>
+                    <span className="absolute left-0 top-0 text-amber-500 text-2xl">&quot;</span>
                     At Utkal Group, we drive toward sustainable business practices that ensure long-term existence while developing notable client relationships across PAN India operations.
                   </p>
                   <p>
