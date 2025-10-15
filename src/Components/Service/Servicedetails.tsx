@@ -40,32 +40,32 @@ export const serviceData = [
     slug: "topfront",
     category: "Marketing",
     image: top1.src,
-    description:
-      "Digital Marketing. Brand Strategy. SEO/SEM Services. Social Media Campaigns. Content Creation.",
-    services: ["Digital Marketing", "Branding", "SEO/SEM", "Social Media", "Content Creation"],
+description:
+  "Engineering Project Management. Technical Staffing Solutions. Industrial Operations Support. Process Optimization. On-Site Workforce Deployment.",
+services: ["Project Management", "Staffing Solutions", "Operations Support", "Process Optimization", "Workforce Deployment"],
     rating: 4.7,
     clients: 160,
     featured: true,
   },
-  {
-    id: 4,
-    title: "ZPLUS SECURITY",
-    slug: "zplus-security",
-    category: "Security",
-    image: zplus.src,
-    description:
-      "Executive Protection. Residential Security. Commercial Security. Event Security Management. Emergency Response Services.",
-    services: [
-      "Executive Protection",
-      "Residential Security",
-      "Commercial Security",
-      "Event Security",
-      "Emergency Response",
-    ],
-    rating: 4.8,
-    clients: 180,
-    featured: true,
-  },
+  // {
+  //   id: 4,
+  //   title: "ZPLUS SECURITY",
+  //   slug: "zplus-security",
+  //   category: "Security",
+  //   image: zplus.src,
+  //   description:
+  //     "Executive Protection. Residential Security. Commercial Security. Event Security Management. Emergency Response Services.",
+  //   services: [
+  //     "Executive Protection",
+  //     "Residential Security",
+  //     "Commercial Security",
+  //     "Event Security",
+  //     "Emergency Response",
+  //   ],
+  //   rating: 4.8,
+  //   clients: 180,
+  //   featured: true,
+  // },
   {
     id: 5,
     title: "UTKAL INTERNATIONAL",
@@ -151,9 +151,10 @@ export const serviceData = [
     slug: "odo-management",
     category: "Management",
     image: odo1.src,
-    description:
-      "Project Management. Operations Outsourcing. Workflow Optimization. HR & Payroll Services. Risk Management.",
-    services: ["Project Management", "Operations", "Workflow Optimization", "HR & Payroll", "Risk Management"],
+description:
+  "Corporate Events. Wedding Planning. Brand Promotions. Stage & Venue Management. Logistics & Guest Coordination.",
+services: ["Corporate Events", "Weddings", "Brand Promotions", "Venue Management", "Logistics"],
+
     rating: 4.5,
     clients: 110,
     featured: false,
@@ -192,9 +193,9 @@ export const serviceData = [
     slug: "utkal-corporation",
     category: "Corporate",
     image: corporation1.src,
-    description:
-      "Corporate Investment. Infrastructure Development. Business Mergers & Acquisitions. Strategic Partnerships. Industry Research.",
-    services: ["Investment", "Infrastructure", "Mergers", "Partnerships", "Research"],
+description:
+  "Global Metal Trading. Import & Export of Ferrous and Non-Ferrous Metals. Industrial Supply Chain. Quality Procurement. International Logistics.",
+services: ["Metal Export", "Metal Import", "Industrial Supply", "Procurement", "Logistics"],
     rating: 4.8,
     clients: 130,
     featured: true,

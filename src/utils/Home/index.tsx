@@ -223,14 +223,14 @@ export const photoArr = [
     content:
       "Business Consulting.Technology Solutions.Marketing and Branding. Human Resource Services.Facility Management.",
   },
-  {
-    id: 12,
-    title: "Mr Corporate",
-    image: slider12,
-    logo: mr1,
-    content:
-      "Facility Management.Ship management.Airport Management.Corporate Canteen. Technical Service.",
-  },
+  // {
+  //   id: 12,
+  //   title: "Mr Corporate",
+  //   image: slider12,
+  //   logo: mr1,
+  //   content:
+  //     "Facility Management.Ship management.Airport Management.Corporate Canteen. Technical Service.",
+  // },
   {
     id: 13,
     title: "ODO EVENTMANAGEMENT",
@@ -271,14 +271,14 @@ export const photoArr = [
     content:
       "Custom Web Development.Mobile App Development.UI/UX Design.Software Development.Digital Marketing Services.",
   },
-  {
-    id: 18,
-    title: "Z+ SECURITY",
-    image: zplus,
-    logo: utkalz,
-    content:
-      "Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
-  },
+  // {
+  //   id: 18,
+  //   title: "Z+ SECURITY",
+  //   image: zplus,
+  //   logo: utkalz,
+  //   content:
+  //     "Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
+  // },
 ];
 
 

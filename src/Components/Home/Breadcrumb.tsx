@@ -117,9 +117,6 @@ export default function CorporateHero() {
                     📩 Get in Touch
                   </button>
                 </Link>
-                <button className="px-6 md:px-8 py-3 bg-transparent text-white font-semibold rounded-full border border-white/30 hover:bg-white/10 hover:border-white/50 backdrop-blur-sm hover:scale-105 transition flex items-center gap-2">
-                  📂 View Portfolio
-                </button>
               </div>
             </div>
           </div>

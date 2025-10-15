@@ -4,6 +4,7 @@ import { home27 } from "@/assests/Home";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 export default function Welcome() {
   const [counters, setCounters] = useState({
@@ -167,9 +168,11 @@ export default function Welcome() {
 
           {/* CTA */}
           <div className="pt-6" data-aos="fade-up" data-aos-delay="500">
+            <Link href="/contact">
             <button className="px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform duration-300">
               Learn More →
             </button>
+            </Link>
           </div>
         </div>
 

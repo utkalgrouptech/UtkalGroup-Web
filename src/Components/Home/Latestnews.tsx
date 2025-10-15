@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { home16, home17, home18 } from '@/assests/Home';
+import Link from 'next/link';
 
 export default function LatestNews() {
   const blogData = [
@@ -87,9 +88,11 @@ export default function LatestNews() {
 
         {/* CTA */}
         <div className="text-center mt-16">
+          <Link href="/blog">
           <button className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
             View All Articles
           </button>
+          </Link>
         </div>
       </div>
     </section>
