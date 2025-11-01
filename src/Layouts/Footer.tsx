@@ -39,7 +39,11 @@ export default function Footer() {
         <div>
           <h2 className="text-lg font-semibold mb-4">Address</h2>
           <p className="text-sm w-64">
-          Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.
+            Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur,
+            Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.
+          </p>
+          <p className="text-sm mt-3">
+            📞 <span className="font-semibold">+91 9853034446</span>
           </p>
         </div>
 
@@ -48,9 +52,9 @@ export default function Footer() {
           <h2 className="text-lg font-semibold mb-4">Our Services</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
             {[
-              'Utkal facility', 'Utkal smart', 'Indoplus', 'Utkal global', 'MR corporate', 'Maxim', 
-              'Odo management', 'Homedeal', 'Topfront', 'Utkal foundation', 'Utkal homes', 
-              'Utkal corporation', 'Utkal bottling', 'Utkal education', 
+              'Utkal facility', 'Utkal smart', 'Indoplus', 'Utkal global', 'MR corporate', 'Maxim',
+              'Odo management', 'Homedeal', 'Topfront', 'Utkal foundation', 'Utkal homes',
+              'Utkal corporation', 'Utkal bottling', 'Utkal education',
               'Utkal international', 'Utkal power', 'My job'
             ].map((service, index) => (
               <li key={index}>

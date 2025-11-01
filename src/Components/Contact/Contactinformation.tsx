@@ -90,8 +90,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+91 9853030003</p>
-                    <p className="text-gray-600">+91 9668848999</p>
+                    {/* <p className="text-gray-600">+91 9853030003</p>
+                    <p className="text-gray-600">+91 9668848999</p> */}
                     <p className="text-gray-600">+91 9692200370</p>
                     <p className="text-gray-600">+91 9853034446</p>
                   </div>
@@ -104,7 +104,7 @@ const ContactPage = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Email</h4>
                     <p className="text-gray-600">info@utkalgroup.in</p>
-                    <p className="text-gray-600">support@utkalgroup.in</p>
+                    {/* <p className="text-gray-600">support@utkalgroup.in</p> */}
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const ContactPage = () => {
               {
                 city: "Bhubaneswar",
                 address: "Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
-                phone: "+91 9853030003"
+                phone: "+91 9853034446"
               },
               {
                 city: "Bangalore",
