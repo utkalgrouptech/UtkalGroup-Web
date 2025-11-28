@@ -185,7 +185,7 @@ export default function Team() {
                 ensuring sustainable growth and organizational excellence across all operations.
               </p>
               <p className="text-gray-700 italic">
-                "Leadership is not about titles, it’s about inspiring and guiding the team towards a common vision."
+                &quot;Leadership is not about titles, it’s about inspiring and guiding the team towards a common vision.&quot;
               </p>
             </div>
             <div className="absolute bottom-0 w-full h-2 bg-gray-300 rounded-full -z-10"></div>
