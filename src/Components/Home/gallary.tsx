@@ -33,11 +33,9 @@ export default function GallerySectionWise() {
   const [lightboxImg, setLightboxImg] = useState<StaticImageData | null>(null);
 
   return (
-    <div className="w-full py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-b from-white via-[#e8f0ff] to-white">
-
+    <div className="w-full pt-32 pb-16 px-4 md:py-24 md:px-10 lg:px-20 bg-gradient-to-b from-white via-[#e8f0ff] to-white">
       {gallerySections.map((section, index) => (
-        <div key={index} className="mb-20">
-
+        <div key={index} className={`mb-20 ${index === 0 ? 'mt-4 md:mt-0' : ''}`}>
           {/* Section Title */}
           <h2 className="text-3xl font-bold text-[#000080] mb-8 tracking-wide">
             {section.title}
