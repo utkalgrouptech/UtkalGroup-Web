@@ -4,7 +4,11 @@ import React, { useState, useEffect } from "react";
 import { navArr } from "@/utils/Home";
 import { useRouter } from "next/router";
 import { group } from "@/assests/Home";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+
+// Convert Image to motion component
+const MotionImage = motion(Image);
 
 export default function Header() {
   const router = useRouter();
@@ -28,7 +32,7 @@ export default function Header() {
     >
       <div className="hidden lg:block max-w-7xl mx-auto px-8">
         <div className="flex h-full items-center justify-between">
-          {/* Logo + Flag Shape */}
+          {/* Logo with Motion */}
           <div
             className="relative cursor-pointer"
             onClick={() => router.push("/")}
@@ -47,9 +51,12 @@ export default function Header() {
               transition={{ type: "spring", stiffness: 120, damping: 16 }}
             />
 
-            <motion.img
+            {/* Motion Image instead of motion.img */}
+            <MotionImage
               src={group.src}
               alt="Logo"
+              width={145}
+              height={60}
               className="relative z-10 object-contain pl-3"
               animate={{
                 width: isScrolled ? 115 : 145,
@@ -82,56 +89,55 @@ export default function Header() {
                   onClick={() => router.push(item.path)}
                 >
                   {item.title}
-
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-yellow-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </span>
 
                 {/* Dropdown */}
-      {/* Dropdown */}
-      <AnimatePresence>
-    {item.subMenu && activeMenu === item.id && (
-      <motion.div
-        initial={{ opacity: 0, y: -10, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0, y: -10, scale: 0.98 }}
-        transition={{ duration: 0.25, ease: "easeOut" }}
-        className="
-          absolute left-1/2 transform -translate-x-1/2 mt-5 w-[34rem]
-          bg-white border border-gray-200
-          rounded-2xl shadow-xl
-          overflow-hidden z-50
-        "
-      >
-        {/* SLIDER WRAPPER */}
-        <div className="flex items-center space-x-4 overflow-x-auto scrollbar-none p-4">
-          {item.subMenu.map((sub) => (
-            <div
-              key={sub.id}
-              onClick={() => router.push(sub.path)}
-              className="
-                flex flex-col items-center justify-center min-w-[130px]
-                bg-gradient-to-br from-[#ffffff] via-[#f2f6ff] to-[#dfe8ff]
-                hover:from-[#f0f5ff] hover:via-[#e2eaff] hover:to-[#d5e0ff]
-                p-5 rounded-full cursor-pointer
-                transition-all duration-300
-                hover:scale-105 hover:shadow-md
-              "
-            >
-              <img
-                src={sub.img?.src}
-                alt={sub.title}
-                className="w-12 h-12 object-contain"
-              />
+                <AnimatePresence>
+                  {item.subMenu && activeMenu === item.id && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10, scale: 0.98 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -10, scale: 0.98 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="
+                        absolute left-1/2 transform -translate-x-1/2 mt-5 w-[34rem]
+                        bg-white border border-gray-200
+                        rounded-2xl shadow-xl
+                        overflow-hidden z-50
+                      "
+                    >
+                      <div className="flex items-center space-x-4 overflow-x-auto scrollbar-none p-4">
+                        {item.subMenu.map((sub) => (
+                          <div
+                            key={sub.id}
+                            onClick={() => router.push(sub.path)}
+                            className="
+                              flex flex-col items-center justify-center min-w-[130px]
+                              bg-gradient-to-br from-[#ffffff] via-[#f2f6ff] to-[#dfe8ff]
+                              hover:from-[#f0f5ff] hover:via-[#e2eaff] hover:to-[#d5e0ff]
+                              p-5 rounded-full cursor-pointer
+                              transition-all duration-300
+                              hover:scale-105 hover:shadow-md
+                            "
+                          >
+                            <Image
+                              src={sub.img?.src}
+                              alt={sub.title}
+                              width={48}
+                              height={48}
+                              className="w-12 h-12 object-contain"
+                            />
 
-              <span className="mt-2 text-sm text-gray-900 font-semibold text-center">
-                {sub.title}
-              </span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    )}
-      </AnimatePresence>
+                            <span className="mt-2 text-sm text-gray-900 font-semibold text-center">
+                              {sub.title}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ))}
           </nav>
