@@ -13,7 +13,6 @@ export default function faq() {
     <MainLayouts>
        <Commonbreadcrumb data={data}/> 
        <Questions/>
-     
     </MainLayouts>
   )
 }

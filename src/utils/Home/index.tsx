@@ -1,7 +1,4 @@
-
 import {  ayus1, ayush1, ayushman, bott, bottle, bottling, client1, client10, client11, client12, client13, client2, client3, client4, client5, client6, client7, client8, client9, corporation, corporation1,  education, education1, facility, found, foundation, global, global1, home13, home14, home15, homedeal, Homedealogo, homes, house, indo1, international, job1, joblogo, link, max, maxim, maxim1, mr, mr1, myjob, national, odo, odo1,  power, power1, slider1, slider10, slider11, slider12, slider13, slider14, slider15, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider9, smart, smartlink, study, top, top1, topfront, utkal1, utkalz, zplus } from "@/assests/Home";
-
-
 
 export const navArr = [
   {
@@ -62,9 +59,7 @@ subMenu: [
     path: "/contact",
   },
 ];
-
-  
-          export const faqArr= [
+export const faqArr= [
             {
                 id:1,
                 question:"What services does Utkal Group offer?",
@@ -91,11 +86,8 @@ subMenu: [
               answer:"Absolutely, Utkal Group is committed to sustainable practices and follows environmental guidelines in all its projects to ensure minimal ecological impact."
           },
          
-          ]
-
-  
-
-          export const CardArr = [
+]
+export const CardArr = [
             {
               id: 1,
               title: "Security Services",
@@ -132,8 +124,7 @@ subMenu: [
               title: "Mechanized Cleaning",
               heading: "At Utkal Group, we harness the power of advanced technology to deliver superior mechanized cleaning services. ",
             },
-          ];
-
+];
 export const photoArr = [
   {
     id: 1,
@@ -280,8 +271,6 @@ export const photoArr = [
   //     "Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
   // },
 ];
-
-
 export const serviceArr = [
   {
     id: 1,
@@ -410,10 +399,7 @@ export const serviceArr = [
   //     "Executive Protection.Residential Security. Commercial Security. Event Security Management.Emergency Response Services.",
   // },
 ];
-
-
-
-         export const clientArr = [
+export const clientArr = [
          { id:1,
           img:client1,
          },
@@ -465,8 +451,7 @@ export const serviceArr = [
           img:client13,
         },
            
-          ];
-
+];
 export const cardArr = [
   {
     id: 1,
@@ -594,9 +579,7 @@ export const cardArr = [
     description:
       "Indoplus is a premier web and mobile app development company which empowers businesses to thrive in the digital age. With over 5 years of experience,  Our team of expert developers collaborates closely with clients of all sizes. IndoPlus offers comprehensive IT solutions transformation journey.",
   },
-];
-
-      
+];   
 export const sliderArr = [
   {
     id: 1,

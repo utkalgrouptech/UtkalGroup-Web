@@ -29,7 +29,7 @@ const faqData = [
     id: 1,
     question: "What services does Utkal Group offer?",
     answer:
-      "Utkal Group provides a diverse range of services across 18+ specialized companies, including facility management, security services, real estate development, green energy solutions, IT services, payroll management, and much more. We serve various industries with comprehensive business solutions.",
+      "Utkal Group provides a diverse range of services across 20+ specialized companies, including facility management, security services, real estate development, green energy solutions, IT services, payroll management, and much more. We serve various industries with comprehensive business solutions.",
   },
   {
     id: 2,
@@ -65,13 +65,13 @@ const faqData = [
     id: 7,
     question: "How many companies are part of Utkal Group?",
     answer:
-      "Utkal Group consists of 18+ specialized companies, each focusing on different business verticals. These include Utkal Homes, Utkal Power, Z Plus Security, Utkal Facility, IndoPlus, Utkal Foundation, Ayushman Foundation, and many more, providing comprehensive business solutions.",
+      "Utkal Group consists of 20+ specialized companies, each focusing on different business verticals. These include Utkal Homes, Utkal Power, Z Plus Security, Utkal Facility, IndoPlus, Utkal Foundation, Ayushman Foundation, and many more, providing comprehensive business solutions.",
   },
   {
     id: 8,
     question: "What makes Utkal Group different from competitors?",
     answer:
-      "Utkal Group stands out due to our comprehensive approach - we're not just a single service provider but a complete business solutions ecosystem. With 18+ specialized companies, 24/7 support, PAN India operations, and over 15 years of experience, we offer unmatched reliability and expertise.",
+      "Utkal Group stands out due to our comprehensive approach - we're not just a single service provider but a complete business solutions ecosystem. With 20+ specialized companies, 24/7 support, PAN India operations, and over 15 years of experience, we offer unmatched reliability and expertise.",
   },
   {
     id: 9,

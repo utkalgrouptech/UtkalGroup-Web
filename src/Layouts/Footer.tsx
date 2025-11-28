@@ -52,14 +52,33 @@ export default function Footer() {
           <h2 className="text-lg font-semibold mb-4">Our Services</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
             {[
-              'Utkal facility', 'Utkal smart', 'Indoplus', 'Utkal global', 'MR corporate', 'Maxim',
-              'Odo management', 'Homedeal', 'Topfront', 'Utkal foundation', 'Utkal homes',
-              'Utkal corporation', 'Utkal bottling', 'Utkal education',
-              'Utkal international', 'Utkal power', 'My job'
+              { name: 'Utkal Facility', link: 'https://utkalfacility.com' },
+              { name: 'Utkal Smart', link: 'https://utkalsmart.in' },
+              { name: 'Indoplus', link: 'https://indoplus.net ' },
+              { name: 'Utkal Global', link: 'https://utkalglobal.in' },
+              { name: 'MR Corporate', link: 'https://mrcorporate.in' },
+              { name: 'Maxim', link: 'https://maximplus.in' },
+              { name: 'Odo Management', link: 'https://odo.ind.in' },
+              { name: 'Homedeal', link: 'https://homedeal.co.in' },
+              { name: 'Topfront', link: 'https://topfront.in' },
+              { name: 'Utkal Foundation', link: 'https://utkalfoundation.com' },
+              { name: 'Utkal Homes', link: 'https://utkalhomes.in' },
+              { name: 'Utkal Corporation', link: 'https://utkalcorporation.com' },
+              { name: 'Utkal Bottling', link: 'https://utkalbottling.in' },
+              { name: 'Utkal Education', link: 'https://utkaleducation.in' },
+              { name: 'Utkal International', link: 'https://utkalinternational.com' },
+              { name: 'Utkal Power', link: 'https://utkalpower.in' },
+              { name: 'My Job', link: 'https://myjob.ind.in' },
+               { name: 'Ayushman Foundation', link: 'https://ayushmanfoundation.in/' },
             ].map((service, index) => (
               <li key={index}>
-                <Link href="/service" className="text-white hover:underline">
-                  ➤ {service}
+                <Link
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
+                  ➤ {service.name}
                 </Link>
               </li>
             ))}

@@ -35,7 +35,7 @@ export { default as client5} from "./Untitled_design__9_-removebg-preview.png"
 
 export { default as home26} from "./4-bg.jpg"
 export { default as home27} from "./about.jpg"
-export { default as home28} from "./chairman__1_-removebg-preview.png"
+export { default as home28} from "./chairman__1_-removebg-preview.jpeg"
 export { default as zplus} from "./portrait-male-security-guard-with-radio-station-camera-screens.jpg"
 export { default as indo1} from "./Screenshot 2024-11-07 131020.png"
 export { default as bottle} from "./utkal bottling.png"

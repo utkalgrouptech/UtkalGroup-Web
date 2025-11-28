@@ -266,9 +266,7 @@ services: ["Metal Export", "Metal Import", "Industrial Supply", "Procurement", "
   clients: 1200,
   featured: true,
 }
-
 ];
-
 
 const categories = [
   "All",
@@ -304,37 +302,50 @@ export default function ServicePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 geometric-bg text-white overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block bg-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8">
-              Our Services
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-              Comprehensive Business
-              <span className="block">Solutions</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-              Discover our diverse portfolio of 18+ specialized companies serving various industries across India
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm">
-                18+ Companies
-              </span>
-              <span className="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm">
-                PAN India
-              </span>
-              <span className="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm">
-                24/7 Support
-              </span>
-              <span className="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm">
-                1000+ Clients
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="relative py-24 px-6 bg-gradient-to-br from-white via-[#f3f6ff] to-[#dce6ff] overflow-hidden">
 
+  {/* Soft Floating Blobs */}
+  <div className="absolute top-[-40px] left-[-40px] w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl animate-pulse"></div>
+  <div className="absolute bottom-[-60px] right-[-20px] w-96 h-96 bg-[#4fa941]/10 rounded-full blur-3xl animate-pulse"></div>
+  <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-[#f47920]/10 rounded-full blur-3xl opacity-70"></div>
+
+  <div className="max-w-5xl mx-auto text-center relative z-10">
+
+    {/* Tag */}
+    <span className="inline-block bg-[#000080]/10 text-[#000080] px-7 py-3 rounded-full text-sm font-medium tracking-wide shadow-sm backdrop-blur-md mb-10">
+      Our Services
+    </span>
+
+    {/* Title */}
+    <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#000080]">
+      Transforming Businesses with
+      <span className="block text-[#f47920] mt-1">Integrated Solutions</span>
+    </h1>
+
+    {/* Subtitle */}
+    <p className="text-lg md:text-2xl text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
+      Explore our diverse ecosystem of <span className="font-semibold text-[#000080]">20+ specialized companies</span> delivering 
+      world-class services across India with innovation and excellence.
+    </p>
+
+    {/* Highlights Badges */}
+    <div className="flex flex-wrap justify-center gap-4 mt-10">
+      {[
+        "20+ Companies",
+        "PAN India Presence",
+        "24/7 Support",
+        "5000+ Happy Clients"
+      ].map((item, i) => (
+        <span
+          key={i}
+          className="inline-block bg-white shadow-sm border border-[#000080]/10 px-5 py-2 rounded-full text-sm text-[#000080] hover:shadow-md transition-all backdrop-blur-md"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Filters and Search */}
       <section className="py-12 bg-white border-b">
         <div className="container mx-auto px-4">

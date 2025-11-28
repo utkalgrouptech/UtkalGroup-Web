@@ -13,7 +13,7 @@ const data={
 export default function team() {
   return (
     <MainLayouts>
-     <Commonbreadcrumb data={data}/>
+     {/* <Commonbreadcrumb data={data}/> */}
     <TeamSection/>
  
     </MainLayouts>

@@ -144,13 +144,13 @@ export default function Careers() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <span className="font-semibold">15+</span> Companies
+                <span className="font-semibold">20+</span> Companies
               </div>
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <span className="font-semibold">50+</span> Open Positions
+                <span className="font-semibold">100+</span> Open Positions
               </div>
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <span className="font-semibold">10+</span> Cities
+                <span className="font-semibold">500+</span> Cities
               </div>
             </div>
             <button 
@@ -409,7 +409,7 @@ export default function Careers() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Our Location</h3>
               <p className="text-gray-600">
                 Utkal Group Headquarters<br />
-                Bhubaneswar, Odisha<br />
+                 Kalinga Vihar, Patrapada, Bhubaneswar, Odisha<br />
                 India - 751024
               </p>
             </div>
@@ -423,8 +423,8 @@ export default function Careers() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600">
                 HR Department<br />
-                +91 9876543210<br />
-                Mon - Fri, 9:00 AM - 6:00 PM
+                +91 9853034446<br />
+                Mon - Sat, 9:00 AM - 6:00 PM
               </p>
             </div>
 
@@ -436,30 +436,12 @@ export default function Careers() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
               <p className="text-gray-600">
-                careers@utkalgroup.com<br />
-                hr@utkalgroup.com<br />
+                info@utkalgroup.in<br />
+                hr.head@utkalgroup.in<br />
                 We reply within 24 hours
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Your Journey with Utkal Group?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
-            Join our talented team and grow with one of the fastest growing business conglomerates.
-          </p>
-          <button 
-            onClick={() => document.getElementById('open-positions')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:shadow-2xl"
-          >
-            View All Open Positions
-          </button>
         </div>
       </section>
     </MainLayouts>

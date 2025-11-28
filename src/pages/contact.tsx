@@ -12,7 +12,7 @@ const data={
 export default function contact() {
   return (
     <MainLayouts>
-         <Commonbreadcrumb data={data}/>
+         {/* <Commonbreadcrumb data={data}/> */}
          <Contactinformation/>
         
     </MainLayouts>

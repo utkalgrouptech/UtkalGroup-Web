@@ -1,7 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import { home16, home17, home18 } from '@/assests/Home';
-import Link from 'next/link';
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { home16, home17, home18 } from "@/assests/Home";
+import Link from "next/link";
 
 export default function LatestNews() {
   const blogData = [
@@ -9,89 +12,124 @@ export default function LatestNews() {
       image: home16.src,
       category: "HouseKeeping",
       title: "Professional Housekeeping Services for Your Property",
-      excerpt: "We provide thorough and professional housekeeping services to take care of all aspects of your property.",
-      link: "#",
+      excerpt:
+        "We provide thorough and professional housekeeping services to take care of all aspects of your property.",
+      slug: "professional-housekeeping-services",
     },
     {
       image: home17.src,
       category: "PayRoll",
       title: "Integrated Payroll Solutions",
-      excerpt: "We offer a wide spectrum of integrated payroll solutions while you can focus on your core business mission.",
-      link: "#",
+      excerpt:
+        "We offer a wide spectrum of integrated payroll solutions while you can focus on your core business mission.",
+      slug: "integrated-payroll-solutions",
     },
     {
       image: home18.src,
       title: "Comprehensive Staffing Solutions",
       category: "Staffing Solution",
-      excerpt: "We provide both temporary and permanent qualified staffing solutions across various business sectors.",
-      link: "#",
+      excerpt:
+        "We provide both temporary and permanent qualified staffing solutions across various business sectors.",
+      slug: "comprehensive-staffing-solutions",
     },
   ];
 
   return (
-    <section className="w-full bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-gradient-to-br from-[#e8efff] via-[#fff5ed] to-[#e8efff] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-lg font-semibold text-amber-600 mb-2">INSIGHTS & UPDATES</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest News & Articles</h2>
-          <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
+          <p className="text-lg font-semibold text-[#f47920] mb-2 tracking-wider">
+            INSIGHTS & UPDATES
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
+            Latest News & Articles
+          </h2>
+          <div className="w-24 h-1 bg-[#4fa941] mx-auto rounded-full"></div>
         </div>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
           {blogData.map((blog, index) => (
-            <article 
-              key={index} 
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
+            <motion.div
+              key={index}
+              className="relative flex flex-col items-center group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <span className="bg-amber-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    {blog.category}
-                  </span>
-                </div>
-              </div>
+              {/* Parallax Image */}
+              <motion.div
+                className="relative w-full h-64 rounded-xl overflow-hidden shadow-xl bg-white cursor-pointer transform transition-transform duration-500"
+                whileHover={{ rotate: -1.5, scale: 1.03 }}
+              >
+                <motion.div
+                  className="absolute inset-0"
+                  whileHover={{
+                    scale: 1.1,
+                    y: -5,
+                    x: 3,
+                    transition: { duration: 0.6 },
+                  }}
+                >
+                  <Image
+                    src={blog.image}
+                    alt={blog.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                </motion.div>
+                <span className="absolute top-4 left-4 bg-[#f47920] text-white text-xs px-3 py-1 rounded-full font-medium shadow-md">
+                  {blog.category}
+                </span>
+              </motion.div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+              {/* Text Card */}
+              <motion.div
+                className="relative w-11/12 -mt-10 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 z-10 text-center transform transition-transform duration-500"
+                whileHover={{ rotate: 1.5, y: -6 }}
+              >
+                <h3 className="text-xl font-bold text-[#000080] mb-3 leading-snug group-hover:text-[#f47920] transition-colors duration-300">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{blog.excerpt}</p>
-                <div className="flex items-center">
-                  <a 
-                    href={blog.link} 
-                    className="text-amber-600 font-medium flex items-center hover:text-amber-700 transition-colors"
+                <p className="text-gray-600 mb-5 text-sm">{blog.excerpt}</p>
+                <Link
+                  href={`/blog`}
+                  className="inline-flex items-center text-[#4fa941] font-semibold hover:text-[#f47920] transition-all duration-300"
+                >
+                  Read More
+                  <motion.svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    className="w-4 h-4 ml-2"
+                    whileHover={{ x: 5 }}
                   >
-                    Read More
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
-                  <span className="text-gray-400 text-sm ml-auto">3 min read</span>
-                </div>
-              </div>
-            </article>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </motion.svg>
+                </Link>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-20">
           <Link href="/blog">
-          <button className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-            View All Articles
-          </button>
+            <motion.button
+              whileHover={{ scale: 1.05, rotate: 0.5 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-10 py-3 bg-[#000080] text-white font-medium rounded-full shadow-md hover:bg-[#4fa941] transition-all duration-300"
+            >
+              View All Articles
+            </motion.button>
           </Link>
         </div>
       </div>

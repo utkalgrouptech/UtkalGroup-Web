@@ -1,241 +1,272 @@
-import { team1, team2, team3, team4, team5, team6, team7, team8, team9 } from '@/assests/Team';
-import Image from 'next/image';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import BusinessIcon from '@mui/icons-material/Business';
-import EngineeringIcon from '@mui/icons-material/Engineering';
-import CorporateFareIcon from '@mui/icons-material/CorporateFare';
-import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
-import GroupsIcon from '@mui/icons-material/Groups';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+"use client";
 
-const TeamSection = () => {
-  const teamMembers = [
-    {
-      name: 'Suresh Mishra',
-      role: 'CMD',
-      image: team1,
-      linkedIn: '#',
-      icon: <CorporateFareIcon className="text-amber-600" />,
-      bio: 'Suresh Mishra is the visionary leader and CMD of our organization.',
-      departments: ['Corporate Strategy', 'Executive Leadership', 'Growth Visionary']
-    },
-    {
-      name: 'Swayanshree Mishra',
-      role: 'Director',
-      image: team2,
-      linkedIn: '#',
-      icon: <BusinessIcon className="text-amber-600" />,
-      bio: 'Swayanshree Mishra brings expertise and dedication as Director.',
-      departments: ['Business Development', 'Operations']
-    },
-    // {
-    //   name: 'LTP Narayan',
-    //   role: 'Director',
-    //   image: team3,
-    //   linkedIn: '#',
-    //   icon: <BusinessIcon className="text-amber-600" />,
-    //   bio: 'LTP Narayan is a driving force in our leadership team.',
-    //   departments: ['Finance', 'Strategy']
-    // },
-    {
-      name: 'Niranjan Mishra',
-      role: 'Director',
-      image: team4,
-      linkedIn: '#',
-      icon: <BusinessIcon className="text-amber-600" />,
-      bio: 'Niranjan Mishra leads with experience and insight.',
-      departments: ['Operations', 'Compliance']
-    },
-    {
-      name: 'Priyabrata Mishra',
-      role: 'Branch Head',
-      image: team6,
-      linkedIn: '#',
-      icon: <EngineeringIcon className="text-amber-600" />,
-      bio: 'Priyabrata Mishra drives enterprise initiatives.',
-      departments: ['Enterprise Solutions', 'Engineering']
-    },
-    // {
-    //   name: 'B N Mohapatra',
-    //   role: 'Enterprise Director',
-    //   image: team7,
-    //   linkedIn: '#',
-    //   icon: <EngineeringIcon className="text-amber-600" />,
-    //   bio: 'B N Mohapatra is a key leader in enterprise direction.',
-    //   departments: ['Enterprise Solutions', 'Project Management']
-    // },
-    // {
-    //   name: 'Malaya Kumar Rath',
-    //   role: 'CTO',
-    //   image: team9,
-    //   linkedIn: '#',
-    //   icon: <EngineeringIcon className="text-amber-600" />,
-    //   bio: 'Malaya Kumar Rath leads technology as CTO.',
-    //   departments: ['Technology', 'Innovation']
-    // },
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import React from "react";
+import Image from "next/image";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import {
+  team1, team2, team3, team4, team5, team6, team7, team8,
+  team9, team10, team11, team12, team13, team14,
+  team15, team16, team17, team18, team19, team20, team21,
+  team22, team23, team24, team25
+} from "@/assests/Team";
+
+export default function Team() {
+
+  const seniorNames = [
+    "Mr. Suresh Mishra",
+    "Swayamshree Mishra",
+    "Niranjan Mishra",
+    "B B Shingh",
+    "Liaison Manager",
+    "Branch Manager",
+    "Admin Manager"
   ];
 
-  return (
-<section className="w-full bg-gradient-to-b from-gray-50 to-gray-100 py-24 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-7xl mx-auto">
-    {/* Section Header */}
-    <div className="text-center mb-20">
-      <span className="inline-block px-3 py-1 text-sm font-medium text-amber-600 bg-amber-100 rounded-full mb-4">
-        OUR LEADERSHIP
-      </span>
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Executive Team</span>
-      </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        Visionary leaders driving innovation and excellence across our organization
-      </p>
-      <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto mt-8 rounded-full"></div>
-    </div>
+  const cmd = {
+    id: 1,
+    name: "Mr. Suresh Mishra",
+    title: "Founder, CEO / CMD",
+    image: team1,
+  };
 
-    {/* Leadership Spotlight */}
-    <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden mb-24 group">
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-50 to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12">
-        <div className="lg:col-span-5 h-96 lg:h-auto relative overflow-hidden">
-          <Image
-            src={teamMembers[0].image}
-            alt={teamMembers[0].name}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-        </div>
-        <div className="lg:col-span-7 p-10 lg:p-14 flex flex-col justify-center">
-          <div className="flex justify-between items-start mb-6">
-            <div>
-              <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-800 bg-amber-200 rounded-full mb-3">
-                CHAIRMAN & MANAGING DIRECTOR
-              </span>
-              <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 flex items-center gap-3">
-                <span className="text-amber-500">{teamMembers[0].icon}</span>
-                {teamMembers[0].name}
-              </h3>
-              <p className="text-lg text-gray-500 mt-2">{teamMembers[0].role}</p>
-            </div>
-            <a 
-              href={teamMembers[0].linkedIn} 
-              className="text-gray-300 hover:text-amber-600 transition-colors p-2 hover:bg-amber-50 rounded-full"
-              aria-label={`Connect with ${teamMembers[0].name} on LinkedIn`}
-            >
-              <LinkedInIcon fontSize="large" />
-            </a>
-          </div>
-          <p className="text-gray-600 text-lg leading-relaxed mb-8">
-            With over 25 years of industry experience, {teamMembers[0].name.split(' ')[0]} provides strategic vision and 
-            leadership that has guided our company&apos;s exponential growth and innovation across global markets.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-orange-100 text-amber-800 text-sm font-medium">
-              <CorporateFareIcon className="mr-2" fontSize="small" />
-              Corporate Strategy
-            </span>
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">
-              <GroupsIcon className="mr-2" fontSize="small" />
-              Executive Leadership
-            </span>
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 text-purple-800 text-sm font-medium">
-              <TrendingUpIcon className="mr-2" fontSize="small" />
-              Growth Visionary
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+  const higherAuthority = [
+    { id: 2, name: "Swayamshree Mishra", title: "Executive Director", image: team2 },
+    { id: 3, name: "Niranjan Mishra", title: "Director of Finance", image: team3 },
+    { id: 4, name: "B B Shingh", title: "Techno Commercial Head", image: team4 },
+  ];
 
-    {/* Team Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-      {teamMembers.slice(1).map((member, index) => (
-        <div 
-          key={index}
-          className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
-          data-aos="fade-up"
-          data-aos-delay={index * 100}
-        >
-          {/* Image with overlay */}
-          <div className="relative h-80 overflow-hidden">
-            <Image
-              src={member.image}
-              alt={member.name}
-              fill
-              className="object-contain transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-              <h3 className="text-2xl font-bold">{member.name}</h3>
-              <p className="text-amber-300 font-medium">{member.role}</p>
-            </div>
-            <a 
-              href={member.linkedIn}
-              className="absolute top-6 right-6 bg-white/90 text-gray-800 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 hover:bg-amber-500 hover:text-white"
-              aria-label={`Connect with ${member.name} on LinkedIn`}
-            >
-              <LinkedInIcon fontSize="medium" />
-            </a>
-          </div>
-          
-          {/* Content */}
-          <div className="bg-white p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-amber-500">{member.icon}</span>
-              <h4 className="text-xl font-bold text-gray-900">{member.name}</h4>
-            </div>
-            <p className="text-gray-600 mb-5">{member.bio || `${member.name.split(' ')[0]} brings ${Math.floor(Math.random() * 15) + 10} years of experience to their role as ${member.role}.`}</p>
-            <div className="flex flex-wrap gap-2">
-              {member.departments?.map((dept, i) => (
-                <span key={i} className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">
-                  {dept}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
+  const branchManagers = [
+    { id: 1, name: "Senior Liaison Officer", image: team5 },
+    { id: 2, name: "Regional Branch Lead", image: team6 },
+    { id: 3, name: "Senior Branch Operations Lead", image: team7 },
+    { id: 4, name: "Administrative Operations Head", image: team8 },
+  ];
 
-    {/* Gallery Section */}
-    {/* <div className="mb-20">
-      <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Leadership in Action</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-          <div 
-            key={item}
-            className="relative group rounded-xl overflow-hidden aspect-square"
-            data-aos="zoom-in"
-            data-aos-delay={item * 50}
-          >
-            <Image
-              src={`/team-gallery-${item}.jpg`}
-              alt={`Team activity ${item}`}
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-              <svg className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div> */}
+  const hrTeam = [
+    { id: 1, name: "Head Of Hr", image: team9 },
+    { id: 2, name: "Senior HR Operations Manager", image: team10 },
+    { id: 3, name: "HR Administration Supervisor", image: team11 },
+    { id: 4, name: "HR Operations Executive", image: team12 },
+  ];
 
-    {/* CTA */}
-    <div className="text-center">
-      <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-        Explore Our Full Leadership Team
-        <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</section>
+  const accountants = [
+    { id: 1, name: "Senior Accounts Officer", image: team13 },
+    { id: 2, name: "Manager in Finance", image: team14 },
+  ];
+
+  const exportImport = {
+    id: 1,
+    name: "International Trade Strategist",
+    image: team25,
+  };
+
+  const technicalTeam = [
+    { id: 1, name: "Lead Software Engineer", image: team15 },
+    { id: 2, name: "Graphics Designer", image: team16 },
+  ];
+
+  const operationalTeam = [
+    { id: 1, name: "Operations Administration Head", image: team17 },
+    { id: 2, name: "Facilities Operations Officer", image: team18 },
+    { id: 3, name: "Inventory Control Supervisor", image: team19 },
+    { id: 4, name: "Field Operations Lead", image: team20 },
+    { id: 5, name: "Office Operations Specialist", image: team21 },
+    { id: 6, name: "Facilities Service Officer", image: team22 },
+    { id: 7, name: "Facilities Training Supervisor", image: team23 },
+    { id: 8, name: "Security Training & Compliance Officer", image: team24 },
+  ];
+
+  const SectionTitle = ({ title }: { title: string }) => (
+    <h3
+      className="text-3xl font-bold text-gray-900 mb-10 border-l-8 pl-4"
+      style={{ borderColor: "#000080" }}
+    >
+      {title}
+    </h3>
   );
-};
 
-export default TeamSection;
+  const Card = ({ image, name, title }: any) => {
+    const isSenior = seniorNames.includes(name);
+
+    return (
+      <div className="relative group bg-white/70 backdrop-blur-xl rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+
+        <div
+          className={`absolute inset-0 rounded-2xl border-4 transition-all duration-300 pointer-events-none ${
+            isSenior ? "border-yellow-500" : "border-transparent"
+          }`}
+        ></div>
+
+        <div className="relative h-56 group-hover:scale-105 transition-transform duration-300">
+          <Image src={image} alt={name} fill className="object-cover" />
+        </div>
+
+        <div className="p-4 text-center">
+          <h4 className="font-semibold text-gray-900 text-lg">{name}</h4>
+          {title && (
+            <p className="text-sm mt-1 font-medium" style={{ color: "#f47920" }}>
+              {title}
+            </p>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <section className="w-full bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+
+        <div className="text-center mb-20">
+          <span
+            className="inline-block px-4 py-1 text-sm font-semibold rounded-full mb-4"
+            style={{ backgroundColor: "#4fa94120", color: "#4fa941" }}
+          >
+            OUR LEADERSHIP
+          </span>
+
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+            Meet Our
+            <span
+              className="ml-2 bg-clip-text text-transparent"
+              style={{
+                backgroundImage: "linear-gradient(90deg, #000080, #f47920)",
+              }}
+            >
+              Executive Team
+            </span>
+          </h2>
+
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+            Experienced professionals committed to organizational excellence and long-term success.
+          </p>
+        </div>
+
+        <div
+          className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-24 border"
+          style={{ borderColor: "#00008010" }}
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-12">
+            <div className="lg:col-span-5 h-96 relative">
+              <Image src={cmd.image} alt={cmd.name} fill className="object-cover" />
+            </div>
+
+            <div className="lg:col-span-7 p-12 flex flex-col justify-center">
+              <h3 className="text-4xl font-bold text-gray-900">{cmd.name}</h3>
+              <p className="text-xl mt-2 font-semibold" style={{ color: "#f47920" }}>
+                {cmd.title}
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed mt-6">
+                With over 25 years of leadership excellence, he continues to lead growth,
+                innovation, and global operations with a strong strategic vision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <SectionTitle title="Higher Authority" />
+
+        <div className="flex flex-col lg:flex-row items-center gap-8 mb-24 relative">
+
+          <div className="lg:w-1/3 flex items-center justify-center relative">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 shadow-xl rounded-2xl p-8 relative">
+              <div className="absolute -top-4 left-4 w-16 h-2 bg-gray-400 rounded-full"></div>
+              <div className="absolute -top-2 right-4 w-20 h-2 bg-gray-400 rounded-full"></div>
+
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Our Leadership Philosophy</h4>
+              <p className="text-gray-700 mb-2">
+                Our executive team combines decades of experience with innovative thinking,
+                ensuring sustainable growth and organizational excellence across all operations.
+              </p>
+              <p className="text-gray-700 italic">
+                "Leadership is not about titles, it’s about inspiring and guiding the team towards a common vision."
+              </p>
+            </div>
+            <div className="absolute bottom-0 w-full h-2 bg-gray-300 rounded-full -z-10"></div>
+          </div>
+
+          <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {higherAuthority.map((m) => (
+              <Card key={m.id} image={m.image} name={m.name} title={m.title} />
+            ))}
+          </div>
+        </div>
+
+        <SectionTitle title="Branch Managers" />
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+          {branchManagers.map((m) => (
+            <Card key={m.id} image={m.image} name={m.name} />
+          ))}
+        </div>
+
+        <SectionTitle title="Human Resource Team" />
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+          {hrTeam.map((m) => (
+            <Card key={m.id} image={m.image} name={m.name} />
+          ))}
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className="flex justify-between mb-6 text-center">
+            <div className="flex-1">
+              <SectionTitle title="Accounts Team" />
+            </div>
+            <div className="flex-1">
+              <SectionTitle title="Business Coordinator" />
+            </div>
+            <div className="flex-1">
+              <SectionTitle title="Technical Team" />
+            </div>
+          </div>
+
+          <div className="flex gap-6 justify-between">
+            <Card image={accountants[0].image} name={accountants[0].name} />
+            <Card image={accountants[1].image} name={accountants[1].name} />
+            <Card image={exportImport.image} name={exportImport.name} />
+            <Card image={technicalTeam[0].image} name={technicalTeam[0].name} />
+            <Card image={technicalTeam[1].image} name={technicalTeam[1].name} />
+          </div>
+        </div>
+
+        <SectionTitle title="Operational Team" />
+
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2000 }}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          }}
+          className="pb-16"
+        >
+          {operationalTeam.map((m) => (
+            <SwiperSlide key={m.id}>
+              <div className="group bg-white p-4 rounded-3xl shadow-md hover:shadow-xl transition-all flex flex-col items-center">
+
+                <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-gray-200 group-hover:ring-[#000080] transition">
+                  <Image src={m.image} alt={m.name} fill className="object-cover" />
+                </div>
+
+                <h4 className="text-lg font-semibold text-gray-900 mt-4 text-center">
+                  {m.name}
+                </h4>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+      </div>
+    </section>
+  );
+}

@@ -19,7 +19,7 @@ export default function Portfolio() {
 
   const sliderSettings = {
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 6,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -43,22 +43,22 @@ export default function Portfolio() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
             UTKAL GROUP{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000080] via-[#4fa941] to-[#f47920]">
               PORTFOLIO
             </span>
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full"></div>
+          <div className="w-28 h-1 bg-gradient-to-r from-[#000080] via-[#4fa941] to-[#f47920] mx-auto rounded-full"></div>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Discover our diverse verticals and services that drive innovation,
-            growth, and sustainability across India.
+            Explore our powerful ventures shaping industries and transforming
+            communities with innovation and excellence.
           </p>
         </div>
 
-        {/* Main Content */}
+        {/* Main Showcase */}
         <div className="flex flex-col lg:flex-row gap-12 items-center mb-20">
           {/* Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-lg h-[420px] rounded-2xl overflow-hidden shadow-2xl group">
+            <div className="relative w-full max-w-lg h-[420px] rounded-2xl overflow-hidden shadow-2xl group border border-gray-200">
               <Image
                 src={selectedItem.image}
                 alt={selectedItem.title}
@@ -66,19 +66,19 @@ export default function Portfolio() {
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6">
-                <h2 className="text-2xl font-bold text-white drop-shadow-lg">
+                <h2 className="text-3xl font-bold text-white drop-shadow-lg">
                   {selectedItem.title}
                 </h2>
               </div>
             </div>
           </div>
 
-          {/* Content */}
+          {/* Details */}
           <div className="w-full lg:w-1/2">
-            <div className="bg-white/80 backdrop-blur-sm p-10 rounded-2xl border border-gray-200 shadow-xl transition-all hover:shadow-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-amber-500 pl-3">
+            <div className="bg-white/90 backdrop-blur-sm p-10 rounded-2xl border border-gray-200 shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1">
+              <h3 className="text-2xl font-bold text-[#000080] mb-6 border-l-4 border-[#f47920] pl-3">
                 {selectedItem.title}
               </h3>
               <ul className="space-y-4">
@@ -89,7 +89,7 @@ export default function Portfolio() {
                     <li key={index} className="flex items-start">
                       <span className="flex-shrink-0 mt-1 mr-3">
                         <svg
-                          className="w-5 h-5 text-amber-500"
+                          className="w-5 h-5 text-[#4fa941]"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -107,7 +107,7 @@ export default function Portfolio() {
                   ))}
               </ul>
               <Link href="/service" passHref>
-                <button className="mt-8 px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-600 hover:opacity-90 text-white font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105">
+                <button className="mt-8 px-8 py-3 bg-gradient-to-r from-[#000080] via-[#4fa941] to-[#f47920] hover:opacity-90 text-white font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105">
                   Learn More →
                 </button>
               </Link>
@@ -115,7 +115,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* Logo Carousel */}
+        {/* Logo Carousel (Redesigned Cards) */}
         <div className="relative">
           <Slider {...sliderSettings} className="px-6">
             {photoArr.map((logo, index) => (
@@ -125,20 +125,20 @@ export default function Portfolio() {
                 onClick={() => handleLogoClick(index)}
               >
                 <div
-                  className={`p-6 rounded-xl cursor-pointer transition-all duration-300 shadow-md ${
+                  className={`p-6 rounded-2xl cursor-pointer transition-all duration-500 shadow-md hover:-translate-y-2 ${
                     activeIndex === index
-                      ? "bg-white border border-amber-400 shadow-lg scale-105"
-                      : "bg-white/70 border border-gray-200 hover:border-amber-300 hover:shadow-lg"
+                      ? "bg-gradient-to-b from-white to-[#f8f9ff] border-2 border-[#4fa941] shadow-xl scale-105"
+                      : "bg-white/70 border border-gray-200 hover:border-[#4fa941]/60 hover:shadow-lg"
                   }`}
                 >
                   <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 mb-3 flex items-center justify-center">
+                    <div className="w-20 h-20 mb-3 flex items-center justify-center rounded-full bg-gradient-to-br from-[#000080]/10 via-[#4fa941]/10 to-[#f47920]/10 transition-all">
                       <Image
                         src={logo.logo}
                         alt={logo.title}
                         width={80}
                         height={80}
-                        className={`object-contain transition-all duration-300 ${
+                        className={`object-contain transition-transform duration-300 ${
                           activeIndex === index ? "scale-110" : "scale-100"
                         }`}
                       />
@@ -146,12 +146,15 @@ export default function Portfolio() {
                     <p
                       className={`text-sm font-semibold text-center transition-colors ${
                         activeIndex === index
-                          ? "text-amber-600"
-                          : "text-gray-600"
+                          ? "text-[#000080]"
+                          : "text-gray-700"
                       }`}
                     >
                       {logo.title}
                     </p>
+                    {activeIndex === index && (
+                      <div className="mt-2 w-10 h-1 bg-gradient-to-r from-[#000080] via-[#4fa941] to-[#f47920] rounded-full animate-pulse"></div>
+                    )}
                   </div>
                 </div>
               </div>
