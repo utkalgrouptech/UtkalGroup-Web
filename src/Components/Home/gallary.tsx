@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // Import your images
 import {
@@ -29,11 +29,11 @@ const gallerySections = [
 ];
 
 export default function GallerySectionWise() {
-  const [lightboxImg, setLightboxImg] = useState(null);
+  // Fix: explicitly type state as StaticImageData | null
+  const [lightboxImg, setLightboxImg] = useState<StaticImageData | null>(null);
 
   return (
-    <div className="w-full py-16 px-4 md:px-10 lg:px-20 
-      bg-gradient-to-b from-white via-[#e8f0ff] to-white">
+    <div className="w-full py-16 px-4 md:px-10 lg:px-20 bg-gradient-to-b from-white via-[#e8f0ff] to-white">
 
       {gallerySections.map((section, index) => (
         <div key={index} className="mb-20">
@@ -48,28 +48,17 @@ export default function GallerySectionWise() {
             {section.images.map((img, i) => (
               <div
                 key={i}
-                className="
-                  group overflow-hidden rounded-xl shadow-md 
-                  transition-all duration-500 break-inside-avoid
-                  opacity-0 animate-fadeIn
-                "
-                style={{ animationDelay: `${i * 100}ms` }} // stagger effect
+                className="group overflow-hidden rounded-xl shadow-md transition-all duration-500 break-inside-avoid opacity-0 animate-fadeIn relative cursor-pointer"
+                style={{ animationDelay: `${i * 100}ms` }}
                 onClick={() => setLightboxImg(img)}
               >
                 <Image
                   src={img}
                   alt={`${section.title}-${i}`}
-                  className="
-                    w-full h-auto object-cover cursor-pointer
-                    group-hover:scale-105 transition-transform duration-500
-                  "
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                {/* Hover shadow with brand colors */}
-                <div className="
-                  absolute inset-0 opacity-0 group-hover:opacity-100
-                  transition-all duration-500 pointer-events-none
-                  shadow-[0_0_25px_#00008050]
-                "></div>
+                {/* Hover shadow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none shadow-[0_0_25px_#00008050]"></div>
               </div>
             ))}
           </div>
