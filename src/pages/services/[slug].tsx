@@ -3,6 +3,8 @@ import MainLayouts from '@/Layouts/MainLayouts';
 import { Star, CheckCircle, Phone, Email, ArrowForward } from '@mui/icons-material';
 import { useRouter } from 'next/router';
 import CountUp from 'react-countup';
+import Image from "next/image";
+
 
 // Service data with detailed information
 export const serviceDetails = {
