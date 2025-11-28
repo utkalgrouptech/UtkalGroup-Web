@@ -191,9 +191,7 @@ export const serviceDetails = {
     "Cybersecurity & compliance",
     "Transparent communication",
     "Client-centric delivery model",
-  ],
-},
-
+  ],},
 
   "utkal-global": {
     id: 4,
@@ -250,8 +248,7 @@ export const serviceDetails = {
       "Customer-first approach",
     ],
   },
-  // Continuing serviceDetails object
-
+  
   "mr-corporate": {
     id: 5,
     title: "MR CORPORATE",
@@ -383,7 +380,6 @@ export const serviceDetails = {
   ],
 },
 
-
 "odo-management": {
   id: 7,
   title: "ODO MANAGEMENT",
@@ -458,7 +454,6 @@ export const serviceDetails = {
     "Client-centric approach",
   ],
 },
-
 
   "homedeal": {
     id: 8,
@@ -683,6 +678,7 @@ export const serviceDetails = {
       "Commitment to quality",
     ],
   },
+
   "utkal-bottling": {
     id: 12,
     title: "UTKAL BOTTLING",
@@ -962,6 +958,7 @@ export const serviceDetails = {
       "Customer satisfaction",
     ],
   },
+
   "utkal-homes": {
     id: 1,
     title: "UTKAL HOMES",
@@ -1120,7 +1117,6 @@ export const serviceDetails = {
   ],
   },
 
-
   "my-job": {
     id: 17,
     title: "MY JOB",
@@ -1178,8 +1174,6 @@ export const serviceDetails = {
   }
 };
 
-
-
 interface PageProps {
   params: {
     slug: string
@@ -1210,42 +1204,78 @@ export default function ServiceDetailPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+                {/* Left Content */}
                 <div>
                   <span className="inline-block bg-white/20 text-white px-6 py-2 rounded-full text-sm font-medium mb-8">
                     {service.category}
                   </span>
-                  <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">{service.title}</h1>
-                  <p className="text-xl md:text-2xl mb-8 text-blue-100 font-medium">{service.tagline}</p>
-                  <p className="text-lg mb-10 text-gray-200 leading-relaxed">{service.description}</p>
+
+                  <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    {service.title}
+                  </h1>
+
+                  <p className="text-xl md:text-2xl mb-8 text-blue-100 font-medium">
+                    {service.tagline}
+                  </p>
+
+                  <p className="text-lg mb-10 text-gray-200 leading-relaxed">
+                    {service.description}
+                  </p>
+
                   <div className="flex flex-col sm:flex-row gap-4">
                     <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors duration-300 flex items-center justify-center">
                       Get Quote
                       <ArrowForward className="ml-2" />
                     </button>
+
                     <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full bg-transparent font-medium transition-colors duration-300">
                       Download Brochure
                     </button>
                   </div>
                 </div>
+
+                {/* Right Image + Stats Card */}
                 <div className="relative">
-                  <img
+
+                  {/* Main Hero Image */}
+                  <Image
                     src={service.heroImage || "/placeholder.svg"}
                     alt={service.title}
-                    className="rounded-2xl shadow-2xl w-full"
+                    width={800}
+                    height={600}
+                    className="rounded-2xl shadow-2xl w-full object-cover"
+                    priority
                   />
+
+                  {/* Stats Card */}
                   <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
                     <div className="flex items-center space-x-4">
-                      <img src={service.logo || "/placeholder.svg"} alt="Logo" className="w-12 h-12" />
+
+                      {/* Logo Image */}
+                      <Image
+                        src={service.logo || "/placeholder.svg"}
+                        alt="Logo"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 object-contain"
+                      />
+
                       <div>
                         <div className="flex items-center space-x-1 mb-1">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="w-4 h-4 text-yellow-400" />
                           ))}
                         </div>
-                        <div className="text-sm text-gray-600">{service.stats.rating} rating</div>
+
+                        <div className="text-sm text-gray-600">
+                          {service.stats.rating} rating
+                        </div>
                       </div>
+
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
