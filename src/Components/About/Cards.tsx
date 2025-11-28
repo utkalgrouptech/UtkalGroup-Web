@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { about5 } from '@/assests/About';
 import { team1, team2, team3, team4 } from '@/assests/Team';
 import { motion } from 'framer-motion';
@@ -14,7 +15,6 @@ const AboutUtkal = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-white via-[#e6ecff] to-[#000080] text-gray-900 py-28 px-6 overflow-hidden">
-
         {/* Soft Decorative Circles */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#f47920]/10 rounded-full blur-3xl"></div>
@@ -39,129 +39,125 @@ const AboutUtkal = () => {
             </p>
 
             <p className="text-lg max-w-3xl mx-auto text-gray-600">
-             Delivering transformative, end-to-end solutions through specialized companies, redefining excellence with innovation, precision, and unwavering commitment.  
-            {/* Powering progress through expert-driven companies, united by a vision of innovation, superior quality, and meaningful impact across industries. */}
-         </p>
+              Delivering transformative, end-to-end solutions through specialized companies, redefining excellence with innovation, precision, and unwavering commitment.
+            </p>
           </motion.div>
         </div>
       </section>
 
-  {/* Success Stories Section */}
-  <section className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-[#f9fbff] to-[#eef3ff]">
+      {/* Success Stories Section */}
+      <section className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-[#f9fbff] to-[#eef3ff]">
+        <div className="absolute top-0 left-0 w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#f47920]/10 rounded-full blur-3xl animate-pulse"></div>
 
-    {/* Floating gradient blobs */}
-    <div className="absolute top-0 left-0 w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl animate-pulse"></div>
-    <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#f47920]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+          {/* Left Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Building Tomorrow&apos;s{" "}
+              <span className="text-[#f47920]">Success Stories</span>
+            </h2>
 
-    <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Since 2003, Utkal Group has grown from a single facility management company 
+              into one of India&apos;s most trusted business conglomerates — powered by 
+              20+ specialized companies committed to excellence, innovation, and sustainable impact.
+            </p>
 
-      {/* Left Content */}
-      <motion.div
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-          Building Tomorrow&apos;s{" "}
-          <span className="text-[#f47920]">Success Stories</span>
-        </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              With headquarters in Delhi and regional offices across India, we proudly 
+              serve over <strong className="text-[#000080]">5000+ clients</strong>, enabling their success through 
+              comprehensive business solutions.
+            </p>
 
-        <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Since 2003, Utkal Group has grown from a single facility management company 
-          into one of India&apos;s most trusted business conglomerates — powered by 
-          20+ specialized companies committed to excellence, innovation, and sustainable impact.
-        </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                "Comprehensive solutions across industries",
+                "24/7 PAN India support infrastructure",
+                "Commitment to sustainability & responsibility",
+                "Long-term trusted partnerships",
+                "Innovation-driven approach",
+                "Certified quality management systems"
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.15 }}
+                  className="flex items-start"
+                >
+                  <svg className="w-6 h-6 text-[#4fa941] mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span className="text-gray-700">{item}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
 
-        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-          With headquarters in Delhi and regional offices across India, we proudly 
-          serve over <strong className="text-[#000080]">5000+ clients</strong>, enabling their success through 
-          comprehensive business solutions.
-        </p>
+          {/* Right Image Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85, rotate: 2 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative h-[420px] rounded-2xl overflow-hidden shadow-xl group"
+          >
+            <Image 
+              src={about5.src}
+              alt="Utkal Group Headquarters"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+            />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            "Comprehensive solutions across industries",
-            "24/7 PAN India support infrastructure",
-            "Commitment to sustainability & responsibility",
-            "Long-term trusted partnerships",
-            "Innovation-driven approach",
-            "Certified quality management systems"
-          ].map((item, i) => (
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+            {/* Floating badge */}
             <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.15 }}
-              className="flex items-start"
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="absolute top-6 right-6 bg-white shadow-lg px-4 py-2 rounded-xl flex items-center space-x-3"
             >
-              <svg className="w-6 h-6 text-[#4fa941] mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-gray-700">{item}</span>
+              <span className="w-4 h-4 bg-[#4fa941] rounded-full"></span>
+              <p className="text-sm font-semibold text-gray-700">Growing Since 2003</p>
             </motion.div>
-          ))}
+
+            {/* Bottom Info */}
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <h3 className="text-2xl font-bold text-white mb-4">Utkal Group Headquarters</h3>
+              <div className="flex space-x-10 text-white">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  <p className="text-3xl font-bold">23+</p>
+                  <p className="text-sm opacity-80">Years of Excellence</p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  <p className="text-3xl font-bold">500+</p>
+                  <p className="text-sm opacity-80">Cities Served</p>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
-      </motion.div>
-
-      {/* Right Image Card */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.85, rotate: 2 }}
-        whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="relative h-[420px] rounded-2xl overflow-hidden shadow-xl group"
-      >
-        <Image 
-          src={about5.src}
-          alt="Utkal Group Headquarters"
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-
-        {/* Floating badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="absolute top-6 right-6 bg-white shadow-lg px-4 py-2 rounded-xl flex items-center space-x-3"
-        >
-          <span className="w-4 h-4 bg-[#4fa941] rounded-full"></span>
-          <p className="text-sm font-semibold text-gray-700">Growing Since 2003</p>
-        </motion.div>
-
-        {/* Bottom Info */}
-        <div className="absolute bottom-0 left-0 right-0 p-6">
-          <h3 className="text-2xl font-bold text-white mb-4">Utkal Group Headquarters</h3>
-          <div className="flex space-x-10 text-white">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <p className="text-3xl font-bold">23+</p>
-              <p className="text-sm opacity-80">Years of Excellence</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              <p className="text-3xl font-bold">500+</p>
-              <p className="text-sm opacity-80">Cities Served</p>
-            </motion.div>
-          </div>
-        </div>
-      </motion.div>
-
-    </div>
-  </section>
+      </section>
 
       {/* Evolution Section */}
   <section className="py-18 px-6 relative bg-gradient-to-b from-[#f3f7ff] to-white overflow-hidden">
@@ -558,7 +554,6 @@ const AboutUtkal = () => {
     </div>
   </div>
 </section>
-
 
     {/* Closing Message */}
     <motion.div
