@@ -13,8 +13,6 @@ export default function service() {
     <MainLayouts>
       {/* <Commonbreadcrumb data={data}/> */}
         <ServiceDetails/>
-      
-      
     </MainLayouts>
   )
 }

@@ -5,7 +5,10 @@ import SearchIcon from '@mui/icons-material/Search'
 import FilterAltIcon from '@mui/icons-material/FilterAlt'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import StarIcon from '@mui/icons-material/Star'
-import { ayushman, bott, corporation1, education1, facility, found, global1, homedeal, indo1, link, maxim1, myjob, national, odo1, power, slider12, top1, zplus } from "@/assests/Home"
+import {
+  ayushman, bott, corporation1, education1, facility, found, global1, homedeal,
+  indo1, link, maxim1, myjob, national, odo1, power, slider12, top1, zplus,utkalhome
+} from "@/assests/Home"
 
 export const serviceData = [
   {
@@ -47,25 +50,25 @@ services: ["Project Management", "Staffing Solutions", "Operations Support", "Pr
     clients: 160,
     featured: true,
   },
-  // {
-  //   id: 4,
-  //   title: "ZPLUS SECURITY",
-  //   slug: "zplus-security",
-  //   category: "Security",
-  //   image: zplus.src,
-  //   description:
-  //     "Executive Protection. Residential Security. Commercial Security. Event Security Management. Emergency Response Services.",
-  //   services: [
-  //     "Executive Protection",
-  //     "Residential Security",
-  //     "Commercial Security",
-  //     "Event Security",
-  //     "Emergency Response",
-  //   ],
-  //   rating: 4.8,
-  //   clients: 180,
-  //   featured: true,
-  // },
+  {
+    id: 4,
+    title: "Utkal One",
+    slug: "utkal-one",
+    category: "Trade",
+    image: zplus.src,
+    description:
+      "Executive Protection. Residential Security. Commercial Security. Event Security Management. Emergency Response Services.",
+    services: [
+      "Executive Protection",
+      "Residential Security",
+      "Commercial Security",
+      "Event Security",
+      "Emergency Response",
+    ],
+    rating: 4.8,
+    clients: 180,
+    featured: true,
+  },
   {
     id: 5,
     title: "UTKAL INTERNATIONAL",
@@ -131,7 +134,6 @@ services: ["Project Management", "Staffing Solutions", "Operations Support", "Pr
     clients: 140,
     featured: true,
   },
-  
   {
     id: 10,
     title: "MAXIM",
@@ -151,7 +153,7 @@ services: ["Project Management", "Staffing Solutions", "Operations Support", "Pr
     slug: "odo-management",
     category: "Management",
     image: odo1.src,
-description:
+    description:
   "Corporate Events. Wedding Planning. Brand Promotions. Stage & Venue Management. Logistics & Guest Coordination.",
 services: ["Corporate Events", "Weddings", "Brand Promotions", "Venue Management", "Logistics"],
 
@@ -172,14 +174,12 @@ services: ["Corporate Events", "Weddings", "Brand Promotions", "Venue Management
     clients: 310,
     featured: true,
   },
-  
- 
   {
     id: 13,
     slug: "utkal-homes",
     title: "UTKAL HOMES",
     category: "Real Estate",
-    image: homedeal.src,
+    image: utkalhome.src,
     description:
       "Property Development and Construction. Real Estate Sales and Marketing. Home Maintenance Services. Interior Design and Furnishing. Property Management.",
     services: ["Property Development", "Real Estate Sales", "Construction", "Interior Design", "Property Management"],
@@ -226,8 +226,7 @@ services: ["Metal Export", "Metal Import", "Industrial Supply", "Procurement", "
     clients: 75,
     featured: false,
   },
-  
-  
+
   {
     id: 17,
     title: "UTKAL POWER",
@@ -290,7 +289,7 @@ export default function ServicePage() {
       (service) =>
         (selectedCategory === "All" || service.category === selectedCategory) &&
         (service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          service.description.toLowerCase().includes(searchTerm.toLowerCase())),
+          service.description.toLowerCase().includes(searchTerm.toLowerCase()))
     )
     .sort((a, b) => {
       if (sortBy === "featured") return b.featured ? 1 : -1
@@ -302,77 +301,66 @@ export default function ServicePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 px-6 bg-gradient-to-br from-white via-[#f3f6ff] to-[#dce6ff] overflow-hidden">
+      <section className="relative py-20 sm:py-24 px-6 bg-gradient-to-br from-white via-[#f3f6ff] to-[#dce6ff] overflow-hidden">
+        <div className="absolute top-[-40px] left-[-40px] w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-[-60px] right-[-20px] w-96 h-96 bg-[#4fa941]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-[#f47920]/10 rounded-full blur-3xl opacity-70"></div>
 
-  {/* Soft Floating Blobs */}
-  <div className="absolute top-[-40px] left-[-40px] w-72 h-72 bg-[#000080]/10 rounded-full blur-3xl animate-pulse"></div>
-  <div className="absolute bottom-[-60px] right-[-20px] w-96 h-96 bg-[#4fa941]/10 rounded-full blur-3xl animate-pulse"></div>
-  <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-[#f47920]/10 rounded-full blur-3xl opacity-70"></div>
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <span className="inline-block bg-[#000080]/10 text-[#000080] px-6 sm:px-8 py-2 rounded-full text-sm font-medium tracking-wide mb-6 sm:mb-10">
+            Our Services
+          </span>
 
-  <div className="max-w-5xl mx-auto text-center relative z-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#000080]">
+            Transforming Businesses with
+            <span className="block text-[#f47920] mt-1">Integrated Solutions</span>
+          </h1>
 
-    {/* Tag */}
-    <span className="inline-block bg-[#000080]/10 text-[#000080] px-7 py-3 rounded-full text-sm font-medium tracking-wide shadow-sm backdrop-blur-md mb-10">
-      Our Services
-    </span>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4 sm:mt-6 max-w-3xl mx-auto leading-relaxed">
+            Explore our diverse ecosystem of <span className="font-semibold text-[#000080]">20+ specialized companies</span> delivering
+            world-class services across India with innovation and excellence.
+          </p>
 
-    {/* Title */}
-    <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#000080]">
-      Transforming Businesses with
-      <span className="block text-[#f47920] mt-1">Integrated Solutions</span>
-    </h1>
+          <div className="flex flex-wrap justify-center gap-3 mt-6 sm:mt-10">
+            {["20+ Companies", "PAN India Presence", "24/7 Support", "5000+ Happy Clients"].map((item, i) => (
+              <span
+                key={i}
+                className="inline-block bg-white shadow-sm border border-[#000080]/10 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm text-[#000080] hover:shadow-md transition-all backdrop-blur-md"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
 
-    {/* Subtitle */}
-    <p className="text-lg md:text-2xl text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
-      Explore our diverse ecosystem of <span className="font-semibold text-[#000080]">20+ specialized companies</span> delivering 
-      world-class services across India with innovation and excellence.
-    </p>
-
-    {/* Highlights Badges */}
-    <div className="flex flex-wrap justify-center gap-4 mt-10">
-      {[
-        "20+ Companies",
-        "PAN India Presence",
-        "24/7 Support",
-        "5000+ Happy Clients"
-      ].map((item, i) => (
-        <span
-          key={i}
-          className="inline-block bg-white shadow-sm border border-[#000080]/10 px-5 py-2 rounded-full text-sm text-[#000080] hover:shadow-md transition-all backdrop-blur-md"
-        >
-          {item}
-        </span>
-      ))}
-    </div>
-  </div>
-</section>
       {/* Filters and Search */}
-      <section className="py-12 bg-white border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
+      <section className="py-8 sm:py-12 bg-white border-b">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-between">
             {/* Search */}
-            <div className="relative flex-1 max-w-md">
+            <div className="relative flex-1 w-full md:max-w-md">
               <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
                 placeholder="Search services..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 pr-4 py-3 rounded-full border-2 border-gray-200 focus:border-blue-500 w-full"
+                className="pl-10 pr-4 py-2 sm:py-3 rounded-full border-2 border-gray-200 focus:border-blue-500 w-full"
               />
             </div>
 
             {/* Filters */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
               <div className="flex items-center gap-2">
                 <FilterAltIcon className="text-gray-500" />
                 <span className="text-sm font-medium text-gray-700">Filter by:</span>
               </div>
 
-              <select 
-                value={selectedCategory} 
+              <select
+                value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-40 rounded-full border border-gray-300 px-4 py-2"
+                className="w-full sm:w-40 rounded-full border border-gray-300 px-4 py-2"
               >
                 {categories.map((category) => (
                   <option key={category} value={category}>
@@ -381,10 +369,10 @@ export default function ServicePage() {
                 ))}
               </select>
 
-              <select 
-                value={sortBy} 
+              <select
+                value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="w-40 rounded-full border border-gray-300 px-4 py-2"
+                className="w-full sm:w-40 rounded-full border border-gray-300 px-4 py-2"
               >
                 <option value="featured">Featured</option>
                 <option value="rating">Rating</option>
@@ -396,118 +384,100 @@ export default function ServicePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="w-full">
-            <div className="flex justify-between items-center mb-12">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-2">{filteredServices.length} Services Found</h2>
-                <p className="text-gray-600">
-                  {selectedCategory !== "All" ? `in ${selectedCategory}` : "across all categories"}
-                </p>
-              </div>
-              <div className="grid w-40 grid-cols-2 gap-1 bg-gray-200 p-1 rounded-lg">
-                <button className="bg-white py-2 rounded-md">Grid</button>
-                <button className="py-2 rounded-md">List</button>
-              </div>
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 sm:mb-12">
+            <div className="mb-4 md:mb-0">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">{filteredServices.length} Services Found</h2>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {selectedCategory !== "All" ? `in ${selectedCategory}` : "across all categories"}
+              </p>
             </div>
+          </div>
 
-            {/* Grid View */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredServices.map((service) => (
-                <div
-                  key={service.id}
-                  className="group hover:shadow-2xl transition-all duration-500 overflow-hidden rounded-xl border border-gray-200"
-                >
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            {filteredServices.map((service) => (
+              <div key={service.id} className="group hover:shadow-2xl transition-all duration-500 overflow-hidden rounded-xl border border-gray-200 bg-white flex flex-col">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={service.image || "/placeholder.svg"}
+                    alt={service.title}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    {/* Badges */}
-                    <div className="absolute top-4 left-4 flex gap-2">
-                      {service.featured && (
-                        <span className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-xs">
-                          Featured
-                        </span>
-                      )}
-                      <span className="bg-white/90 text-gray-900 px-3 py-1 rounded-full text-xs">
-                        {service.category}
+                  {/* Badges */}
+                  <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+                    {service.featured && (
+                      <span className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 py-1 rounded-full text-xs">
+                        Featured
                       </span>
-                    </div>
-
-                    {/* Rating */}
-                    <div className="absolute top-4 right-4 bg-white/90 rounded-full px-3 py-1 flex items-center gap-1">
-                      <StarIcon className="fill-yellow-400 text-yellow-400" style={{ fontSize: 16 }} />
-                      <span className="text-sm font-medium">{service.rating}</span>
-                    </div>
+                    )}
+                    <span className="bg-white/90 text-gray-900 px-2 py-1 rounded-full text-xs">
+                      {service.category}
+                    </span>
                   </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm line-clamp-3">{service.description}</p>
-
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {service.services.slice(0, 3).map((item, idx) => (
-                        <span key={idx} className="border border-gray-300 px-2 py-1 rounded-full text-xs">
-                          {item}
-                        </span>
-                      ))}
-                      {service.services.length > 3 && (
-                        <span className="border border-gray-300 px-2 py-1 rounded-full text-xs">
-                          +{service.services.length - 3} more
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <div className="text-sm text-gray-500">{service.clients}+ clients served</div>
-                      <button
-                        className="group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300 rounded-full px-4 py-2 bg-blue-500 text-white text-sm"
-                        onClick={() => {
-                          const slug = service.title
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")
-                            .replace(/[^a-z0-9-]/g, "")
-                          window.location.href = `/services/${service.slug}`
-                        }}
-                      >
-                        Learn More
-                        <ArrowForwardIcon style={{ fontSize: 16, marginLeft: 4 }} />
-                      </button>
-                    </div>
+                  {/* Rating */}
+                  <div className="absolute top-3 right-3 bg-white/90 rounded-full px-2 py-1 flex items-center gap-1">
+                    <StarIcon className="fill-yellow-400 text-yellow-400" style={{ fontSize: 16 }} />
+                    <span className="text-xs font-medium">{service.rating}</span>
                   </div>
                 </div>
-              ))}
-            </div>
+
+                <div className="p-4 sm:p-6 flex flex-col flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-3 text-sm sm:text-base line-clamp-3">{service.description}</p>
+
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {service.services.slice(0, 3).map((item, idx) => (
+                      <span key={idx} className="border border-gray-300 px-2 py-1 rounded-full text-xs">
+                        {item}
+                      </span>
+                    ))}
+                    {service.services.length > 3 && (
+                      <span className="border border-gray-300 px-2 py-1 rounded-full text-xs">
+                        +{service.services.length - 3} more
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="mt-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0">
+                    <div className="text-xs sm:text-sm text-gray-500">{service.clients}+ clients served</div>
+                    <button
+                      className="group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300 rounded-full px-4 py-2 bg-blue-500 text-white text-xs sm:text-sm flex items-center"
+                      onClick={() => window.location.href = `/services/${service.slug}`}
+                    >
+                      Learn More <ArrowForwardIcon style={{ fontSize: 16, marginLeft: 4 }} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      {/* <section className="py-16 sm:py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Need a Custom Solution?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Need a Custom Solution?</h2>
+          <p className="text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto text-blue-100">
             Can&apos;t find exactly what you are looking for? Our team can create customized solutions tailored to your
             specific business requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium">
-              Request Custom Solution
-              <ArrowForwardIcon style={{ marginLeft: 8 }} />
+            <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium flex items-center justify-center">
+              Request Custom Solution <ArrowForwardIcon style={{ marginLeft: 6 }} />
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full bg-transparent font-medium">
+            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium flex items-center justify-center">
               Schedule Consultation
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

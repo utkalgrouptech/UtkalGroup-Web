@@ -43,21 +43,31 @@ subMenu: [
     title: "Team",
     path: "/team",
   },
-  {
-    id: 5,
-    title: "Faq",
-    path: "/faq",
-  },
-  {
-    id: 6,
-    title: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   id: 5,
+  //   title: "Faq",
+  //   path: "/faq",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
   {
     id: 7,
     title: "Contact",
     path: "/contact",
   },
+  // {
+  //   id: 8,
+  //   title: "Gallery",
+  //   path: "/gallery",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Career",
+  //   path: "/career",
+  // },
 ];
 export const faqArr= [
             {
@@ -214,14 +224,14 @@ export const photoArr = [
     content:
       "Business Consulting.Technology Solutions.Marketing and Branding. Human Resource Services.Facility Management.",
   },
-  // {
-  //   id: 12,
-  //   title: "Mr Corporate",
-  //   image: slider12,
-  //   logo: mr1,
-  //   content:
-  //     "Facility Management.Ship management.Airport Management.Corporate Canteen. Technical Service.",
-  // },
+  {
+    id: 12,
+    title: "Mr Corporate",
+    image: slider12,
+    logo: mr1,
+    content:
+      "Facility Management.Ship management.Airport Management.Corporate Canteen. Technical Service.",
+  },
   {
     id: 13,
     title: "ODO EVENTMANAGEMENT",
