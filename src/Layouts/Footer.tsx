@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 text-sm sm:text-base">
             {[
               { name: 'Utkal Facility', link: 'https://utkalfacility.com' },
-              { name: 'Utkal Smart', link: 'https://utkalsmart.in' },
+              { name: 'Utkal Smart', link: 'https://utkalsmart.net' },
               { name: 'Indoplus', link: 'https://indoplus.net ' },
               { name: 'Utkal Global', link: 'https://utkalglobal.in' },
               { name: 'MR Corporate', link: 'https://mrcorporate.in' },
