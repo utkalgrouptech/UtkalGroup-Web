@@ -3,17 +3,17 @@ import Image, { StaticImageData } from "next/image";
 
 // Import images
 import {
-  e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11,
-  s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11,
-  t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11,
-  w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12
+  e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20,
+  s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13,
+  t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, 
+  w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14, w15, w16
 } from "@/assests/Gallery";
 
 const gallerySections = [
-  { title: "Celebrations & Events", images: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11] },
-  { title: "Community & Charity Service", images: [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11] },
-  { title: "Workplace Moments", images: [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12] },
-  { title: "Training & Development", images: [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11] }
+  { title: "Celebrations & Events", images: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11,e12, e13, e14, e15, e16, e17, e18, e19, e20] },
+  { title: "Community & Charity Service", images: [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11,s12, s13,] },
+  { title: "Workplace Moments", images: [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12,w13, w14, w15, w16] },
+  { title: "Training & Development", images: [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11,t12] }
 ];
 
 export default function GallerySectionWise() {
