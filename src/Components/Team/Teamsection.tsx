@@ -13,7 +13,7 @@ import {
   team1, team2, team3, team4, team5, team6, team7, team8,
   team9, team10, team11, team12, team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
-  team22, team23, team24, team25
+  team22, team23, team24, team25, team26
 } from "@/assests/Team";
 
 export default function Team() {
@@ -53,6 +53,7 @@ export default function Team() {
     { id: 2, name: "Senior HR Operations Manager", image: team10 },
     { id: 3, name: "HR Administration Supervisor", image: team11 },
     { id: 4, name: "HR Operations Executive", image: team12 },
+    { id: 4, name: "Manager Hr Admin", image: team26 },
   ];
 
   const accountants = [
@@ -91,7 +92,7 @@ export default function Team() {
     </h3>
   );
 
-  const Card = ({ image, name, title }: any) => {
+  const Card = ({ image, name, title, largeMobile  }: any) => {
     const isSenior = seniorNames.includes(name);
     const isHigherAuthority = higherAuthority.some(h => h.name === name);
 
@@ -102,7 +103,12 @@ export default function Team() {
           isSenior ? "border-yellow-500" : "border-transparent"
         }`}></div>
 
-        <div className="relative h-52 sm:h-48 group-hover:scale-105 transition-transform duration-300">
+<div
+  className={`relative transition-transform duration-300 group-hover:scale-105
+    ${largeMobile ? "h-72 sm:h-52" : "h-52 sm:h-48"}
+  `}
+>
+
           <Image
             src={image}
             alt={name}
@@ -194,9 +200,16 @@ export default function Team() {
           </div>
 
           <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-            {higherAuthority.map((m) => (
-              <Card key={m.id} image={m.image} name={m.name} title={m.title} />
-            ))}
+           {higherAuthority.map((m) => (
+  <Card
+    key={m.id}
+    image={m.image}
+    name={m.name}
+    title={m.title}
+    largeMobile
+  />
+))}
+
           </div>
         </div>
 
