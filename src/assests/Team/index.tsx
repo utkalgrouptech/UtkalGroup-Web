@@ -1,7 +1,7 @@
 export { default as team1} from "./Md.jpg"
 export { default as team2} from "./Madam1.png"
 export { default as team3} from "./niranjan.jpg"
-export { default as team4} from "./BB.jpg"
+export { default as team4} from "./ceo.jpg"
 export { default as team5} from "./debasis.jpg"
 export { default as team6} from "./priyabrat.jpg"
 export { default as team7} from "./santanu.jpg"

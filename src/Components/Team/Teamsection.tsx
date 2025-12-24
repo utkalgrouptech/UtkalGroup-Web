@@ -22,7 +22,7 @@ export default function Team() {
     "Mr. Suresh Mishra",
     "Swayanshree Mishra",
     "Niranjan Mishra",
-    "B B Shingh",
+    "Prabir Kar",
     "Liaison Manager",
     "Branch Manager",
     "Admin Manager"
@@ -38,7 +38,7 @@ export default function Team() {
   const higherAuthority = [
     { id: 2, name: "Swayanshree Mishra", title: "Executive Director", image: team2 },
     { id: 3, name: "Niranjan Mishra", title: "Director of Finance", image: team3 },
-    { id: 4, name: "B B Shingh", title: "Techno Commercial Head", image: team4 },
+    { id: 4, name: "Prabir Kar", title: "CEO", image: team4 },
   ];
 
   const branchManagers = [
