@@ -13,7 +13,7 @@ import {
   team1, team2, team3, team4, team5, team6, team7, team8,
   team9, team10, team11, team12, team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
-  team22, team23, team24, team25, team26
+  team22, team23, team24, team25, team26,team27, team28, team29
 } from "@/assests/Team";
 
 export default function Team() {
@@ -53,7 +53,13 @@ export default function Team() {
     { id: 2, name: "Senior HR Operations Manager", image: team10 },
     { id: 3, name: "HR Administration Supervisor", image: team11 },
     { id: 4, name: "HR Operations Executive", image: team12 },
-    { id: 4, name: "Manager Hr Admin", image: team26 },
+  ];
+
+  const BussinessAnalyst = [
+    { id: 1, name: "Manager Hr Admin", image: team26 },
+    { id: 2, name: "BDM", image: team27 },
+    { id: 3, name: "Tender Manager", image: team28 },
+    { id: 4, name: "NGO Lead", image: team29 },
   ];
 
   const accountants = [
@@ -243,6 +249,13 @@ export default function Team() {
           </div>
         </div>
 
+
+ <SectionTitle title="BussinessAnalyst" />
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16 sm:mb-24">
+          {BussinessAnalyst .map((m) => (
+            <Card key={m.id} image={m.image} name={m.name} />
+          ))}
+        </div>
         <SectionTitle title="Operational Team" />
 
         <Swiper
