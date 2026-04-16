@@ -25,7 +25,7 @@ export default function ContactPage() {
     {
       city: "Bhubaneswar",
       address:
-        "Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhubaneswar, Khurda, Odisha - 751019",
+        " Plot No- K5/475,Arya Surya Enclave, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhubaneswar, Khurda, Odisha - 751019",
       phone: "+91 9853034446",
     },
     {
