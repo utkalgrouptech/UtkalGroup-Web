@@ -41,7 +41,7 @@ export default function Footer() {
         <div>
           <h2 className="text-lg sm:text-xl font-semibold mb-4">Address</h2>
           <p className="text-sm sm:text-base">
-            Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur,
+            Plot No- K5/475, Arya Surya Enclave, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur,
             Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.
           </p>
           <p className="text-sm sm:text-base mt-3">
