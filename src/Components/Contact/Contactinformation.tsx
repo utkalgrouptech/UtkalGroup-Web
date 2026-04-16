@@ -129,7 +129,7 @@ export default function ContactPage() {
               <div>
                 <h4 className="font-semibold text-gray-900">Headquarters</h4>
                 <p className="text-gray-600 text-sm">
-                  Arya Surya Enclave, Plot No- K5/475, Kalinga Vihar,
+                   Plot No- K5/475,Arya Surya Enclave, Kalinga Vihar,
                   Patrapada, Bhubaneswar, Odisha - 751019
                 </p>
               </div>
