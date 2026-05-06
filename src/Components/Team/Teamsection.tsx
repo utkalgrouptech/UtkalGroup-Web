@@ -13,7 +13,7 @@ import {
   team1, team2, team3, team4, team5, team6, team7, team8,
   team9,  team11,  team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
-  team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2
+  team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2,staff3
 } from "@/assests/Team";
 
 export default function Team() {
@@ -58,7 +58,7 @@ export default function Team() {
   const BussinessAnalyst = [
     // { id: 1, name: "Manager Hr Admin", image: team26 },
     { id: 2, name: "BDM", image: team27 },
-    // { id: 3, name: "Tender Manager", image: team28 },
+    { id: 3, name: "Tender Manager", image: staff3 },
     { id: 4, name: "NGO Lead", image: team29 },
   ];
 
