@@ -11,9 +11,9 @@ import "swiper/css/pagination";
 
 import {
   team1, team2, team3, team4, team5, team6, team7, team8,
-  team9, team10, team11, team12, team13, team14,
+  team9,  team11,  team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
-  team22, team23, team24, team25, team26,team27, team28, team29
+  team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2
 } from "@/assests/Team";
 
 export default function Team() {
@@ -50,15 +50,15 @@ export default function Team() {
 
   const hrTeam = [
     { id: 1, name: "Head Of Hr", image: team9 },
-    { id: 2, name: "Senior HR Operations Manager", image: team10 },
+   
     { id: 3, name: "HR Administration Supervisor", image: team11 },
-    { id: 4, name: "HR Operations Executive", image: team12 },
+    // { id: 4, name: "HR Operations Executive", image: team12 },
   ];
 
   const BussinessAnalyst = [
-    { id: 1, name: "Manager Hr Admin", image: team26 },
+    // { id: 1, name: "Manager Hr Admin", image: team26 },
     { id: 2, name: "BDM", image: team27 },
-    { id: 3, name: "Tender Manager", image: team28 },
+    // { id: 3, name: "Tender Manager", image: team28 },
     { id: 4, name: "NGO Lead", image: team29 },
   ];
 
@@ -74,8 +74,8 @@ export default function Team() {
   };
 
   const technicalTeam = [
-    { id: 1, name: "Lead Software Engineer", image: team15 },
-    { id: 2, name: "Graphics Designer", image: team16 },
+    { id: 1, name: "Lead Software Engineer", image: staff2 },
+    { id: 2, name: "Graphics Designer", image:staff1 },
   ];
 
   const operationalTeam = [
@@ -86,7 +86,7 @@ export default function Team() {
     { id: 5, name: "Office Operations Specialist", image: team21 },
     { id: 6, name: "Facilities Service Officer", image: team22 },
     { id: 7, name: "Facilities Training Supervisor", image: team23 },
-    { id: 8, name: "Security Training & Compliance Officer", image: team24 },
+    // { id: 8, name: "Security Training & Compliance Officer", image: team24 },
   ];
 
   const SectionTitle = ({ title }: { title: string }) => (
@@ -109,20 +109,14 @@ export default function Team() {
           isSenior ? "border-yellow-500" : "border-transparent"
         }`}></div>
 
-<div
-  className={`relative transition-transform duration-300 group-hover:scale-105
-    ${largeMobile ? "h-72 sm:h-52" : "h-52 sm:h-48"}
-  `}
->
-
-          <Image
-            src={image}
-            alt={name}
-            fill
-            className={`object-cover ${isHigherAuthority ? "object-top" : ""}`}
-          />
-        </div>
-
+<div className="relative aspect-[3/4] overflow-hidden">
+  <Image
+    src={image}
+    alt={name}
+    fill
+    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
         <div className="p-4 text-center">
           <h4 className="font-semibold text-gray-900 text-base sm:text-lg">{name}</h4>
           {title && (
