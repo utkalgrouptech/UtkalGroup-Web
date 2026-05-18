@@ -14,7 +14,9 @@ import {
   team9,  team11,  team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
   team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2,staff3,
-  staff4
+  staff4,
+  staff5,
+  staff6
 } from "@/assests/Team";
 
 export default function Team() {
@@ -53,6 +55,7 @@ export default function Team() {
     { id: 1, name: "Head Of Hr", image: team9 },
    
     { id: 3, name: "HR Administration Supervisor", image: team11 },
+    { id: 2, name: "HR Manager", image: staff5 },
     { id: 4, name: "HR Operations Executive", image: staff4 },
   ];
 
@@ -60,6 +63,7 @@ export default function Team() {
     // { id: 1, name: "Manager Hr Admin", image: team26 },
     { id: 2, name: "BDM", image: team27 },
     { id: 3, name: "Tender Manager", image: staff3 },
+    { id: 5, name: "Tender Executive", image: staff6 },
     { id: 4, name: "NGO Lead", image: team29 },
   ];
 
