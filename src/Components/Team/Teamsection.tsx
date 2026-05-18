@@ -13,7 +13,8 @@ import {
   team1, team2, team3, team4, team5, team6, team7, team8,
   team9,  team11,  team13, team14,
   team15, team16, team17, team18, team19, team20, team21,
-  team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2,staff3
+  team22, team23, team24, team25, team26,team27, team28, team29,staff1,staff2,staff3,
+  staff4
 } from "@/assests/Team";
 
 export default function Team() {
@@ -45,14 +46,14 @@ export default function Team() {
     { id: 1, name: "Senior Liaison Officer", image: team5 },
     { id: 2, name: "Regional Branch Lead", image: team6 },
     { id: 3, name: "Senior Branch Operations Lead", image: team7 },
-    { id: 4, name: "Administrative  Head", image: team8 },
+    { id: 4, name: "Administrative Head", image: team8 },
   ];
 
   const hrTeam = [
     { id: 1, name: "Head Of Hr", image: team9 },
    
     { id: 3, name: "HR Administration Supervisor", image: team11 },
-    // { id: 4, name: "HR Operations Executive", image: team12 },
+    { id: 4, name: "HR Operations Executive", image: staff4 },
   ];
 
   const BussinessAnalyst = [

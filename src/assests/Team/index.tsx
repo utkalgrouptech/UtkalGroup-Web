@@ -31,3 +31,4 @@ export { default as photo} from "./business-concept-with-team-close-up_23-214915
 export { default as staff1} from "./Sritam.jpeg"
 export { default as staff2} from "./puspita.png"
 export { default as staff3} from "./Padmalochan.jpeg"
+export { default as staff4} from "./Hrushi.jpeg"
