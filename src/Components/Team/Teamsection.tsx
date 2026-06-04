@@ -72,11 +72,11 @@ export default function Team() {
     { id: 2, name: "Manager in Finance", image: team14 },
   ];
 
-  const exportImport = {
-    id: 1,
-    name: "International Trade Strategist",
-    image: team25,
-  };
+  // const exportImport = {
+  //   id: 1,
+  //   name: "International Trade Strategist",
+  //   image: team25,
+  // };
 
   const technicalTeam = [
     { id: 1, name: "Lead Software Engineer", image: staff2 },
@@ -235,14 +235,14 @@ export default function Team() {
         <div className="max-w-7xl mx-auto py-12 sm:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 text-center">
             <SectionTitle title="Accounts Team" />
-            <SectionTitle title="Business Coordinator" />
+            {/* <SectionTitle title="Business Coordinator" /> */}
             <SectionTitle title="Technical Team" />
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             <Card image={accountants[0].image} name={accountants[0].name} />
             <Card image={accountants[1].image} name={accountants[1].name} />
-            <Card image={exportImport.image} name={exportImport.name} />
+        
             <Card image={technicalTeam[0].image} name={technicalTeam[0].name} />
             <Card image={technicalTeam[1].image} name={technicalTeam[1].name} />
           </div>
