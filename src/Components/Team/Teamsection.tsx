@@ -45,9 +45,9 @@ export default function Team() {
   ];
 
   const branchManagers = [
-    { id: 1, name: "Senior Liaison Officer", image: team5 },
-    { id: 2, name: "Regional Branch Lead", image: team6 },
-    { id: 3, name: "Senior Branch Operations Lead", image: team7 },
+    // { id: 1, name: "Senior Liaison Officer", image: team5 },
+    // { id: 2, name: "Regional Branch Lead", image: team6 },
+    // { id: 3, name: "Senior Branch Operations Lead", image: team7 },
     { id: 4, name: "Administrative Head", image: team8 },
   ];
 
