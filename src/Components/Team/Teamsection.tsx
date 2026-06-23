@@ -53,7 +53,7 @@ export default function Team() {
 
   const hrTeam = [
     { id: 1, name: "Head Of Hr", image: team9 },
-   
+ 
     { id: 3, name: "HR Administration Supervisor", image: team11 },
     { id: 2, name: "HR Manager", image: staff5 },
     { id: 4, name: "HR Operations Executive", image: staff4 },
