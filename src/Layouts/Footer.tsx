@@ -29,7 +29,7 @@ export default function Footer() {
                 <InstagramIcon className="text-white text-sm sm:text-base" />
               </div>
             </Link>
-            <Link href="#">
+            <Link href="https://www.facebook.com/utkalgroupltd/">
               <div className="bg-gray-800 p-2 sm:p-3 rounded-full hover:bg-gray-700 transition flex items-center justify-center">
                 <FacebookIcon className="text-white text-sm sm:text-base" />
               </div>
