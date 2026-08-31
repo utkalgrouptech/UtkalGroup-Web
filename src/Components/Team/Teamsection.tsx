@@ -29,6 +29,8 @@ import {
   staff5,
   staff6,
    staff7,
+   staff8,
+   staff9
 } from "@/assests/Team";
 
 export default function Team() {
@@ -110,7 +112,7 @@ export default function Team() {
       id: 2,
       name: "Manager in Finance",
       title: "Finance",
-      image: team14,
+      image: staff8,
     },
   ];
 
@@ -125,7 +127,7 @@ export default function Team() {
       id: 2,
       name: "Graphics Designer",
       title: "Creative & Design",
-      image: staff1,
+      image: staff9,
     },
   ];
 
@@ -134,13 +136,13 @@ export default function Team() {
       id: 1,
       name: "BDM",
       title: "Business Development",
-      image: team27,
+      image: staff9,
     },
     {
       id: 2,
       name: "Tender Manager",
       title: "Tender Management",
-      image: staff3,
+      image: staff9,
     },
     {
       id: 3,
