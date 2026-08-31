@@ -30,7 +30,8 @@ import {
   staff6,
    staff7,
    staff8,
-   staff9
+   staff9,
+   staff10
 } from "@/assests/Team";
 
 export default function Team() {
@@ -121,7 +122,7 @@ export default function Team() {
       id: 1,
       name: "Lead Software Engineer",
       title: "Technology",
-      image: staff2,
+      image: staff10,
     },
     {
       id: 2,
