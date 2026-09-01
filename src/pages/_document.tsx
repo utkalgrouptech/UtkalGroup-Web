@@ -3,7 +3,24 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+     <Head>
+  {/* Google Analytics */}
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LS8P18G2N3"
+  />
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LS8P18G2N3');
+      `,
+    }}
+  />
+</Head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}
         <noscript>
