@@ -57,7 +57,7 @@ services: ["Project Management", "Staffing Solutions", "Operations Support", "Pr
     category: "Trade",
     image: zplus.src,
     description:
-      "Executive Protection. Residential Security. Commercial Security. Event Security Management. Emergency Response Services.",
+      "Road Construction. Building Infrastructure. Drainage Systems. Dam Construction. Project Management. Infrastructure Maintenance.",
     services: [
       "Executive Protection",
       "Residential Security",

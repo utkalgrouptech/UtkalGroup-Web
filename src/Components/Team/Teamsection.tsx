@@ -69,7 +69,7 @@ export default function Team() {
   const branchManagers = [
     {
       id: 1,
-      name: "Administrative Head",
+      name: "Commercial Head",
       title: "Administration",
       image: team8,
     },
