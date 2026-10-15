@@ -70,7 +70,7 @@ export default function Team() {
     {
       id: 1,
       name: "Commercial Head",
-      title: "Administration",
+      title: "",
       image: team8,
     },
   ];
